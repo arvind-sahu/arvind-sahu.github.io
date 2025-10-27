@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Full-Stack Developer</title>
+    <title>Arvind Kumar Sahu | Full-Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -41,6 +41,7 @@
             color: var(--text);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
@@ -49,7 +50,7 @@
             padding: 0 2rem;
         }
 
-        /* Theme Toggle */
+        /* Theme Toggle - Improved */
         .theme-toggle {
             position: fixed;
             top: 2rem;
@@ -57,8 +58,8 @@
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -71,6 +72,11 @@
 
         .theme-toggle:hover {
             transform: scale(1.1);
+        }
+
+        .theme-toggle i {
+            font-size: 1.5rem;
+            color: var(--primary);
         }
 
         /* Hero Section - Split Screen */
@@ -151,6 +157,8 @@
             color: #c0caf5;
             font-family: 'Monaco', 'Consolas', monospace;
             font-size: 0.9rem;
+            height: 100%;
+            overflow-y: auto;
         }
 
         .code-line {
@@ -163,6 +171,8 @@
         .code-function { color: #7dcfff; }
         .code-string { color: #9ece6a; }
         .code-var { color: #bb9af7; }
+        .code-keyword { color: #f7768e; }
+        .code-number { color: #ff9e64; }
 
         /* Experience Section */
         .experience {
@@ -200,7 +210,7 @@
         .workflow-item {
             display: flex;
             align-items: center;
-            margin: 4rem 0;
+            margin: 6rem 0;
             position: relative;
             z-index: 2;
         }
@@ -217,6 +227,9 @@
             box-shadow: var(--shadow);
             border: 1px solid var(--border);
             transition: all 0.3s ease;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
         }
 
         .workflow-content:hover {
@@ -225,8 +238,8 @@
         }
 
         .workflow-marker {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             background: var(--gradient);
             border-radius: 50%;
             display: flex;
@@ -237,10 +250,11 @@
             margin: 0 2rem;
             flex-shrink: 0;
             box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+            font-size: 1.5rem;
         }
 
         .company {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 0.5rem;
@@ -255,6 +269,8 @@
 
         .achievements {
             list-style: none;
+            margin-bottom: 2rem;
+            flex: 1;
         }
 
         .achievements li {
@@ -269,6 +285,15 @@
             left: 0;
             color: var(--accent);
             font-weight: bold;
+        }
+
+        .experience-animation {
+            height: 200px;
+            background: #1a1b26;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         /* Skills */
@@ -330,11 +355,24 @@
             transform: translateY(0);
         }
 
-        /* Responsive */
+        /* Responsive - Improved */
         @media (max-width: 968px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
             .hero {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 2rem;
+            }
+            
+            .hero-content {
+                padding: 1rem;
+            }
+            
+            .dynamic-name {
+                font-size: 2.8rem;
             }
             
             .workflow-line {
@@ -343,16 +381,58 @@
             
             .workflow-item {
                 flex-direction: row !important;
+                margin: 4rem 0;
             }
             
             .workflow-content {
+                margin-left: 100px;
+                min-height: auto;
+                padding: 1.5rem;
+            }
+            
+            .workflow-marker {
+                width: 60px;
+                height: 60px;
+                margin: 0 1rem;
+                font-size: 1.2rem;
+            }
+            
+            .theme-toggle {
+                top: 1rem;
+                right: 1rem;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .theme-toggle i {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .workflow-content {
                 margin-left: 80px;
+            }
+            
+            .workflow-marker {
+                width: 50px;
+                height: 50px;
+                margin: 0 0.5rem;
+                font-size: 1rem;
+            }
+            
+            .company {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Theme Toggle -->
+    <!-- Theme Toggle - Improved -->
     <button class="theme-toggle" id="themeToggle">
         <i class="fas fa-moon" id="themeIcon"></i>
     </button>
@@ -361,12 +441,12 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1 class="dynamic-name" id="dynamicName">Your Name</h1>
+                <h1 class="dynamic-name" id="dynamicName">Arvind Kumar Sahu</h1>
                 <div class="typing-text" id="typingText"></div>
                 <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2.5rem;">
                     IIIT Nagpur alumnus • 5+ years building scalable applications • Passionate about system architecture
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
                     <button onclick="scrollToSection('experience')" style="background: var(--gradient); color: white; border: none; padding: 15px 35px; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;">
                         View My Journey
                     </button>
@@ -404,9 +484,12 @@
                         <ul class="achievements">
                             <li>Architected microservices handling 2M+ daily requests</li>
                             <li>Led team of 5 developers in system redesign</li>
-                            <li>Reduced infrastructure costs by 40% through optimization</li>
-                            <li>Implemented CI/CD pipelines reducing deployment time by 70%</li>
+                            <li>Automated employee onboarding with 90% efficiency gain</li>
+                            <li>Built integration systems connecting 10+ platforms</li>
                         </ul>
+                        <div class="experience-animation" id="aqueraAnimation">
+                            <!-- Animation will be inserted by JavaScript -->
+                        </div>
                     </div>
                     <div class="workflow-marker">
                         <i class="fas fa-rocket"></i>
@@ -418,11 +501,14 @@
                         <div class="company">Sarvm.ai</div>
                         <div class="duration">2021 - 2023 | Senior Backend Engineer</div>
                         <ul class="achievements">
-                            <li>Built real-time analytics platform processing 5TB+ data</li>
+                            <li>Built e-commerce platform similar to Blinkit/Zepto</li>
+                            <li>Implemented real-time inventory management</li>
                             <li>Developed machine learning pipelines for predictive analysis</li>
                             <li>Improved API response times by 65% through caching strategies</li>
-                            <li>Mentored 3 junior developers in system design principles</li>
                         </ul>
+                        <div class="experience-animation" id="sarvmAnimation">
+                            <!-- Animation will be inserted by JavaScript -->
+                        </div>
                     </div>
                     <div class="workflow-marker">
                         <i class="fas fa-brain"></i>
@@ -434,11 +520,14 @@
                         <div class="company">Tilli Software</div>
                         <div class="duration">2019 - 2021 | Full-Stack Developer</div>
                         <ul class="achievements">
-                            <li>Developed 15+ production web applications from scratch</li>
-                            <li>Implemented real-time collaboration features using WebSockets</li>
-                            <li>Created design system used across multiple products</li>
+                            <li>Developed payment gateway integration for 15+ banks</li>
+                            <li>Built secure transaction processing system</li>
+                            <li>Created real-time payment tracking dashboard</li>
                             <li>Optimized application performance leading to 50% faster load times</li>
                         </ul>
+                        <div class="experience-animation" id="tilliAnimation">
+                            <!-- Animation will be inserted by JavaScript -->
+                        </div>
                     </div>
                     <div class="workflow-marker">
                         <i class="fas fa-code"></i>
@@ -489,13 +578,13 @@
                 Ready to turn your ideas into exceptional digital experiences
             </p>
             <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-                <a href="mailto:your.email@gmail.com" style="background: var(--gradient); color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                <a href="mailto:arvindkumar93258@gmail.com" style="background: var(--gradient); color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                     <i class="fas fa-envelope"></i> Email Me
                 </a>
-                <a href="https://linkedin.com/in/yourprofile" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                <a href="https://linkedin.com/in/arvindkumar93258" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/yourusername" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                <a href="https://github.com/arvind-sahu" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                     <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
@@ -529,11 +618,19 @@
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         
+        // Set initial theme based on user preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.dataset.theme = 'dark';
+            themeIcon.className = 'fas fa-sun';
+        } else {
+            document.body.dataset.theme = 'light';
+            themeIcon.className = 'fas fa-moon';
+        }
+        
         themeToggle.addEventListener('click', () => {
             const isDark = document.body.dataset.theme === 'dark';
             document.body.dataset.theme = isDark ? 'light' : 'dark';
             themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-            themeToggle.style.background = isDark ? 'var(--surface)' : 'var(--surface)';
         });
 
         // Dynamic Name Font
@@ -571,11 +668,11 @@
             }
         }
 
-        // Code Animation
+        // Code Animation for Hero Section
         function animateCode() {
             const codeContent = document.getElementById('codeContent');
             const codeLines = [
-                '<div class="code-line code-comment">// Building scalable systems</div>',
+                '<div class="code-line code-comment">// Building scalable systems since 2019</div>',
                 '<div class="code-line code-function">class</div>',
                 '<div class="code-line"><span class="code-function">async</span> <span class="code-function">deployProject</span>() {</div>',
                 '<div class="code-line">  <span class="code-var">const</span> architecture = <span class="code-string">"microservices"</span>;</div>',
@@ -598,6 +695,88 @@
             });
         }
 
+        // Animation for Aquera Labs
+        function animateAquera() {
+            const aqueraAnimation = document.getElementById('aqueraAnimation');
+            const codeLines = [
+                '<div class="code-line code-comment">// Employee Onboarding Automation</div>',
+                '<div class="code-line"><span class="code-function">function</span> <span class="code-function">automateOnboarding</span>() {</div>',
+                '<div class="code-line">  <span class="code-var">const</span> systems = [<span class="code-string">"HR"</span>, <span class="code-string">"Payroll"</span>, <span class="code-string">"IT"</span>];</div>',
+                '<div class="code-line">  <span class="code-keyword">for</span> (<span class="code-var">let</span> system of systems) {</div>',
+                '<div class="code-line">    <span class="code-function">integrate</span>(system);</div>',
+                '<div class="code-line">    <span class="code-function">autoProvision</span>(system);</div>',
+                '<div class="code-line">  }</div>',
+                '<div class="code-line">  <span class="code-keyword">return</span> <span class="code-string">"Onboarding Complete"</span>;</div>',
+                '<div class="code-line">}</div>',
+                '<div class="code-line code-comment">// 90% efficiency gain achieved ✅</div>'
+            ];
+
+            codeLines.forEach((line, index) => {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.innerHTML = line;
+                    div.style.fontSize = '0.8rem';
+                    aqueraAnimation.appendChild(div);
+                }, index * 400);
+            });
+        }
+
+        // Animation for Sarvm.ai
+        function animateSarvm() {
+            const sarvmAnimation = document.getElementById('sarvmAnimation');
+            const codeLines = [
+                '<div class="code-line code-comment">// E-commerce Platform - Blinkit/Zepto Style</div>',
+                '<div class="code-line"><span class="code-function">class</span> <span class="code-function">QuickCommerce</span> {</div>',
+                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
+                '<div class="code-line">    <span class="code-var">this</span>.deliveryTime = <span class="code-number">10</span>; <span class="code-comment">// minutes</span></div>',
+                '<div class="code-line">    <span class="code-var">this</span>.inventory = <span class="code-string">"real-time"</span>;</div>',
+                '<div class="code-line">  }</div>',
+                '<div class="code-line">  </div>',
+                '<div class="code-line">  <span class="code-function">processOrder</span>() {</div>',
+                '<div class="code-line">    <span class="code-function">updateInventory</span>();</div>',
+                '<div class="code-line">    <span class="code-function">assignDelivery</span>();</div>',
+                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-string">"Order Delivered in 10 mins"</span>;</div>',
+                '<div class="code-line">  }</div>',
+                '<div class="code-line">}</div>'
+            ];
+
+            codeLines.forEach((line, index) => {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.innerHTML = line;
+                    div.style.fontSize = '0.8rem';
+                    sarvmAnimation.appendChild(div);
+                }, index * 400);
+            });
+        }
+
+        // Animation for Tilli Software
+        function animateTilli() {
+            const tilliAnimation = document.getElementById('tilliAnimation');
+            const codeLines = [
+                '<div class="code-line code-comment">// Payment Gateway Integration</div>',
+                '<div class="code-line"><span class="code-function">async</span> <span class="code-function">processPayment</span>(amount, bank) {</div>',
+                '<div class="code-line">  <span class="code-var">const</span> encryptedData = <span class="code-function">encrypt</span>(amount);</div>',
+                '<div class="code-line">  <span class="code-var">const</span> response = <span class="code-keyword">await</span> <span class="code-function">callBankAPI</span>(bank, encryptedData);</div>',
+                '<div class="code-line">  </div>',
+                '<div class="code-line">  <span class="code-keyword">if</span> (response.status === <span class="code-string">"success"</span>) {</div>',
+                '<div class="code-line">    <span class="code-function">updateTransaction</span>(response.transactionId);</div>',
+                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-string">"Payment Successful"</span>;</div>',
+                '<div class="code-line">  }</div>',
+                '<div class="code-line">}</div>',
+                '<div class="code-line code-comment">// Integrated with 15+ banking partners</div>'
+            ];
+
+            codeLines.forEach((line, index) => {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.innerHTML = line;
+                    div.style.fontSize = '0.8rem';
+                    tilliAnimation.appendChild(div);
+                }, index * 400);
+            });
+        }
+
         // Scroll Animations
         function checkScroll() {
             const fadeElements = document.querySelectorAll('.fade-in');
@@ -606,6 +785,15 @@
                 const windowHeight = window.innerHeight;
                 if (elementTop < windowHeight - 100) {
                     element.classList.add('visible');
+                    
+                    // Trigger animations when elements come into view
+                    if (element.id === 'aqueraAnimation' && element.children.length === 0) {
+                        animateAquera();
+                    } else if (element.id === 'sarvmAnimation' && element.children.length === 0) {
+                        animateSarvm();
+                    } else if (element.id === 'tilliAnimation' && element.children.length === 0) {
+                        animateTilli();
+                    }
                 }
             });
         }
