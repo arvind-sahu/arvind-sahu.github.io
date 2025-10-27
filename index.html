@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 3rem 0;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        /* Section Styles */
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            border-left: 3px solid #667eea;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+
+        .company {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .duration {
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header fade-in">
+            <!-- Add your photo here -->
+            <!-- <img src="your-photo.jpg" alt="Your Name" class="profile-img"> -->
+            <h1 class="name">Your Name</h1>
+            <p class="title">Full-Stack Developer | 5+ Years Experience</p>
+            <p>Backend Specialist • Node.js • NestJS • Golang • React • Next.js</p>
+            <div style="margin-top: 2rem;">
+                <a href="#contact" class="btn">Get In Touch</a>
+                <a href="your-resume.pdf" download class="btn" style="background: linear-gradient(45deg, #FF6B6B, #FF8E53);">Download Resume</a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="section fade-in">
+            <h2>About Me</h2>
+            <p>IIIT Nagpur alumnus with 5+ years of experience in full-stack development. Specialized in building scalable backend systems and dynamic frontend applications. Passionate about clean code, system architecture, and mentoring fellow developers.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section fade-in">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="company">Sarvm.ai</div>
+                    <div class="duration">2022 - Present</div>
+                    <p>Senior Backend Developer - Building scalable microservices architecture</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="company">Tilli Software</div>
+                    <div class="duration">2020 - 2022</div>
+                    <p>Full-Stack Developer - Developed end-to-end web applications</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="company">Aquera Labs</div>
+                    <div class="duration">2019 - 2020</div>
+                    <p>Software Developer - Built REST APIs and frontend interfaces</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section fade-in">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <p>Node.js, NestJS, Golang, TypeScript, Express</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <p>React, Next.js, JavaScript, HTML/CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MongoDB, Redis</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Cloud</h3>
+                    <p>AWS, Docker, Git, Kubernetes</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section fade-in">
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <div class="company">Indian Institute of Information Technology, Nagpur</div>
+                <div class="duration">2015 - 2019</div>
+                <p>Bachelor of Technology in Computer Science & Engineering</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section fade-in">
+            <h2>Let's Connect</h2>
+            <div style="text-align: center;">
+                <a href="mailto:your.email@gmail.com" class="btn">📧 Email Me</a>
+                <a href="https://linkedin.com/in/yourprofile" class="btn" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/yourusername" class="btn" target="_blank">🐙 GitHub</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
