@@ -296,6 +296,11 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
+        .experience-animation .code-content {
+            padding: 1rem;
+            font-size: 0.8rem;
+        }
+
         /* Skills */
         .skills {
             padding: 6rem 0;
@@ -487,8 +492,10 @@
                             <li>Automated employee onboarding with 90% efficiency gain</li>
                             <li>Built integration systems connecting 10+ platforms</li>
                         </ul>
-                        <div class="experience-animation" id="aqueraAnimation">
-                            <!-- Animation will be inserted by JavaScript -->
+                        <div class="experience-animation">
+                            <div class="code-content" id="aqueraCode">
+                                <!-- Aquera code animation will go here -->
+                            </div>
                         </div>
                     </div>
                     <div class="workflow-marker">
@@ -506,8 +513,10 @@
                             <li>Developed machine learning pipelines for predictive analysis</li>
                             <li>Improved API response times by 65% through caching strategies</li>
                         </ul>
-                        <div class="experience-animation" id="sarvmAnimation">
-                            <!-- Animation will be inserted by JavaScript -->
+                        <div class="experience-animation">
+                            <div class="code-content" id="sarvmCode">
+                                <!-- Sarvm code animation will go here -->
+                            </div>
                         </div>
                     </div>
                     <div class="workflow-marker">
@@ -525,8 +534,10 @@
                             <li>Created real-time payment tracking dashboard</li>
                             <li>Optimized application performance leading to 50% faster load times</li>
                         </ul>
-                        <div class="experience-animation" id="tilliAnimation">
-                            <!-- Animation will be inserted by JavaScript -->
+                        <div class="experience-animation">
+                            <div class="code-content" id="tilliCode">
+                                <!-- Tilli code animation will go here -->
+                            </div>
                         </div>
                     </div>
                     <div class="workflow-marker">
@@ -578,10 +589,10 @@
                 Ready to turn your ideas into exceptional digital experiences
             </p>
             <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-                <a href="mailto:arvindkumar93258@gmail.com" style="background: var(--gradient); color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                <a href="mailto:arvind.sahu@example.com" style="background: var(--gradient); color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                     <i class="fas fa-envelope"></i> Email Me
                 </a>
-                <a href="https://linkedin.com/in/arvindkumar93258" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                <a href="https://linkedin.com/in/arvind-kumar-sahu" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
                 <a href="https://github.com/arvind-sahu" style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
@@ -697,7 +708,7 @@
 
         // Animation for Aquera Labs
         function animateAquera() {
-            const aqueraAnimation = document.getElementById('aqueraAnimation');
+            const aqueraCode = document.getElementById('aqueraCode');
             const codeLines = [
                 '<div class="code-line code-comment">// Employee Onboarding Automation</div>',
                 '<div class="code-line"><span class="code-function">function</span> <span class="code-function">automateOnboarding</span>() {</div>',
@@ -715,15 +726,14 @@
                 setTimeout(() => {
                     const div = document.createElement('div');
                     div.innerHTML = line;
-                    div.style.fontSize = '0.8rem';
-                    aqueraAnimation.appendChild(div);
+                    aqueraCode.appendChild(div);
                 }, index * 400);
             });
         }
 
         // Animation for Sarvm.ai
         function animateSarvm() {
-            const sarvmAnimation = document.getElementById('sarvmAnimation');
+            const sarvmCode = document.getElementById('sarvmCode');
             const codeLines = [
                 '<div class="code-line code-comment">// E-commerce Platform - Blinkit/Zepto Style</div>',
                 '<div class="code-line"><span class="code-function">class</span> <span class="code-function">QuickCommerce</span> {</div>',
@@ -744,15 +754,14 @@
                 setTimeout(() => {
                     const div = document.createElement('div');
                     div.innerHTML = line;
-                    div.style.fontSize = '0.8rem';
-                    sarvmAnimation.appendChild(div);
+                    sarvmCode.appendChild(div);
                 }, index * 400);
             });
         }
 
         // Animation for Tilli Software
         function animateTilli() {
-            const tilliAnimation = document.getElementById('tilliAnimation');
+            const tilliCode = document.getElementById('tilliCode');
             const codeLines = [
                 '<div class="code-line code-comment">// Payment Gateway Integration</div>',
                 '<div class="code-line"><span class="code-function">async</span> <span class="code-function">processPayment</span>(amount, bank) {</div>',
@@ -771,8 +780,7 @@
                 setTimeout(() => {
                     const div = document.createElement('div');
                     div.innerHTML = line;
-                    div.style.fontSize = '0.8rem';
-                    tilliAnimation.appendChild(div);
+                    tilliCode.appendChild(div);
                 }, index * 400);
             });
         }
@@ -787,12 +795,16 @@
                     element.classList.add('visible');
                     
                     // Trigger animations when elements come into view
-                    if (element.id === 'aqueraAnimation' && element.children.length === 0) {
-                        animateAquera();
-                    } else if (element.id === 'sarvmAnimation' && element.children.length === 0) {
-                        animateSarvm();
-                    } else if (element.id === 'tilliAnimation' && element.children.length === 0) {
-                        animateTilli();
+                    const workflowContent = element.querySelector('.workflow-content');
+                    if (workflowContent) {
+                        const company = workflowContent.querySelector('.company').textContent;
+                        if (company === 'Aquera Labs' && document.getElementById('aqueraCode').children.length === 0) {
+                            animateAquera();
+                        } else if (company === 'Sarvm.ai' && document.getElementById('sarvmCode').children.length === 0) {
+                            animateSarvm();
+                        } else if (company === 'Tilli Software' && document.getElementById('tilliCode').children.length === 0) {
+                            animateTilli();
+                        }
                     }
                 }
             });
