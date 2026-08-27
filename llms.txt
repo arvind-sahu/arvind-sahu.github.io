@@ -1,13 +1,15 @@
 # Arvind Kumar Sahu
 
-Official website of Arvind Kumar Sahu, Senior Software Engineer in Bengaluru.
+Official website of Arvind Kumar Sahu, Senior Software Engineer (SSE) in Bengaluru.
 
 - Name: Arvind Kumar Sahu
 - Site: https://arvind-sahu.github.io/
 - Bio: https://arvind-sahu.github.io/arvind-kumar-sahu.html
+- Roles: https://arvind-sahu.github.io/senior-software-engineer.html
 - GitHub: https://github.com/arvind-sahu
 - LinkedIn: https://www.linkedin.com/in/gopherarvind/
 - ORCID: https://orcid.org/0009-0006-6710-9360
 - Email: arvindkumar93258@gmail.com
 - Education: IIIT Nagpur, B.Tech CSE
+- Titles: Senior Software Engineer, SSE, Node.js developer, Go developer, Golang developer, NestJS developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
 - Stack: Node.js, NestJS, Golang, AWS, TypeScript

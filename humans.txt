@@ -1,7 +1,7 @@
 /* TEAM */
 Name: Arvind Kumar Sahu
 Role: Senior Software Engineer (SSE)
-Title: Node.js developer, Golang developer, NestJS developer, full-stack developer with AWS
+Title: Senior Software Engineer (SSE), Node.js developer, Golang developer, NestJS developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
 Location: Bengaluru, India
 Email: arvindkumar93258@gmail.com
 GitHub: https://github.com/arvind-sahu
