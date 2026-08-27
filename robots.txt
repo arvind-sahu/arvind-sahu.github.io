@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
+Disallow: /404.html
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 Sitemap: https://arvind-sahu.github.io/sitemap.xml

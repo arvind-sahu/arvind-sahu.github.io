@@ -1,1973 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvind Kumar Sahu - Full Stack Developer | Node.js, React, Golang Expert</title>
-    <meta name="description"
-        content="Arvind Kumar Sahu - IIIT Nagpur alumnus with 5+ years experience in full-stack development. Expert in Node.js, NestJS, Golang, React, Next.js. Previously at Aquera Labs, Sarvm.ai, Tilli Software.">
-    <meta name="keywords"
-        content="full stack developer, backend developer, node.js developer, react developer, golang developer, system design, microservices, AWS, Docker">
-    <meta name="author" content="Arvind Kumar Sahu">
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Arvind Kumar Sahu - Full Stack Developer">
-    <meta property="og:description"
-        content="5+ years experience in full-stack development. Expert in Node.js, NestJS, Golang, React, Next.js.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://arvind-sahu.github.io">
-    <meta property="og:image" content="https://arvind-sahu.github.io/og-image.jpg">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arvind Kumar Sahu - Full Stack Developer">
-    <meta name="twitter:description"
-        content="5+ years experience in full-stack development. Expert in Node.js, NestJS, Golang, React, Next.js.">
-    <meta name="twitter:image" content="https://arvind-sahu.github.io/twitter-image.jpg">
-
-    <!-- Basic SEO -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Arvind Kumar Sahu | Software Developer | Official Website</title>
-
-    <meta name="description" content="Official website of Arvind Kumar Sahu. Portfolio of Arvind — software developer skilled in web development, programming, and engineering. View projects, skills, and contact details.">
-    
-    <meta name="keywords" content="Arvind, Arvind Kumar, Arvind Sahu, Arvind Kumar Sahu, arvind portfolio, software developer arvind, arvind website, arvind kumar sahu official website">
-
-    <meta name="author" content="Arvind Kumar Sahu">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph (Facebook / LinkedIn) -->
-    <meta property="og:title" content="Arvind Kumar Sahu | Software Developer">
-    <meta property="og:description" content="Welcome to the official portfolio of Arvind Kumar Sahu — software developer, engineer, and tech enthusiast.">
-    <meta property="og:url" content="https://arvind-sahu.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://arvind-sahu.github.io/profile.jpg">
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arvind Kumar Sahu | Software Developer">
-    <meta name="twitter:description" content="Explore the professional work and projects of Arvind Kumar Sahu.">
-    <meta name="twitter:image" content="https://arvind-sahu.github.io/profile.jpg">
-
-
-    <meta name="description" content="Official website of Arvind Kumar Sahu — Backend Developer with 5+ years of experience in Node.js, Golang, Microservices, AWS, Docker, Redis, PostgreSQL, Kafka, and scalable system architecture.">
-
-    <meta name="keywords" content="Arvind, Arvind Kumar, Arvind Sahu, Arvind Kumar Sahu, Backend Developer, Node.js Developer, Golang Developer, Arvind Portfolio, Software Engineer, Backend Engineer">
-    
-    <meta name="author" content="Arvind Kumar Sahu">
-    <meta name="robots" content="index, follow">
-
-
-    <meta property="og:title" content="Arvind Kumar Sahu | Backend Developer">
-    <meta property="og:description" content="Backend Developer with 5+ years experience in Node.js, Golang, AWS, Microservices, Redis, Kafka, Docker, and cloud architecture.">
-    <meta property="og:url" content="https://arvind-sahu.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://arvind-sahu.github.io/profile.png">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arvind Kumar Sahu | Backend Developer">
-    <meta name="twitter:description" content="Backend Developer specializing in Node.js, Golang, AWS, Docker, PostgreSQL, and microservices.">
-    <meta name="twitter:image" content="https://arvind-sahu.github.io/profile.png">
-
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://arvind-sahu.github.io">
-    <title>Arvind Kumar Sahu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --secondary: #ec4899;
-            --accent: #06d6a0;
-            --background: #f8fafc;
-            --surface: #ffffff;
-            --text: #1e293b;
-            --text-light: #64748b;
-            --border: #e2e8f0;
-            --shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        [data-theme="dark"] {
-            --background: #0f172a;
-            --surface: #1e293b;
-            --text: #f1f5f9;
-            --text-light: #94a3b8;
-            --border: #334155;
-            --shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: var(--background);
-            color: var(--text);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Theme Toggle - Improved */
-        .theme-toggle {
-            position: fixed;
-            top: 2rem;
-            right: 2rem;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(10px);
-        }
-
-        .theme-toggle:hover {
-            transform: scale(1.1);
-        }
-
-        .theme-toggle i {
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-
-        /* Hero Section - Split Screen */
-        .hero {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            padding: 2rem;
-        }
-
-        .dynamic-name {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.1;
-        }
-
-        .typing-text {
-            font-size: 1.5rem;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-            min-height: 3rem;
-            font-weight: 500;
-        }
-
-        .hero-animation {
-            position: relative;
-            height: 500px;
-            background: var(--surface);
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .code-window {
-            width: 90%;
-            height: 80%;
-            background: #1a1b26;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .window-header {
-            background: #2a2b36;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .window-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .dot-red {
-            background: #ff5f57;
-        }
-
-        .dot-yellow {
-            background: #ffbd2e;
-        }
-
-        .dot-green {
-            background: #28c940;
-        }
-
-        .code-content {
-            padding: 2rem;
-            color: #c0caf5;
-            font-family: 'Monaco', 'Consolas', monospace;
-            font-size: 0.9rem;
-            height: 100%;
-            overflow-y: auto;
-        }
-
-        .code-line {
-            margin-bottom: 0.5rem;
-            opacity: 0;
-            animation: typeLine 0.5s forwards;
-        }
-
-        .code-comment {
-            color: #565f89;
-        }
-
-        .code-function {
-            color: #7dcfff;
-        }
-
-        .code-string {
-            color: #9ece6a;
-        }
-
-        .code-var {
-            color: #bb9af7;
-        }
-
-        .code-keyword {
-            color: #f7768e;
-        }
-
-        .code-number {
-            color: #ff9e64;
-        }
-
-        /* Experience Section */
-        .experience {
-            padding: 8rem 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 4rem;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .workflow {
-            max-width: 1000px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .workflow-line {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--gradient);
-            transform: translateX(-50%);
-            z-index: 1;
-        }
-
-        .workflow-item {
-            display: flex;
-            align-items: center;
-            margin: 6rem 0;
-            position: relative;
-            z-index: 2;
-        }
-
-        .workflow-item:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-
-        .workflow-content {
-            flex: 1;
-            background: var(--surface);
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .workflow-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-        }
-
-        .workflow-marker {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            margin: 0 2rem;
-            flex-shrink: 0;
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
-            font-size: 1.5rem;
-        }
-
-        .company {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .duration {
-            color: var(--secondary);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .achievements {
-            list-style: none;
-            margin-bottom: 2rem;
-            flex: 1;
-        }
-
-        .achievements li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .achievements li::before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        .experience-animation {
-            height: 200px;
-            background: #1a1b26;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-top: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .experience-animation .code-content {
-            padding: 1rem;
-            font-size: 0.8rem;
-        }
-
-        /* Skills */
-        .skills {
-            padding: 6rem 0;
-            background: var(--surface);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .skill-card {
-            background: var(--background);
-            padding: 2.5rem;
-            border-radius: 16px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid var(--border);
-        }
-
-        .skill-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow);
-        }
-
-        .skill-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Animations */
-        @keyframes typeLine {
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Responsive - Improved */
-        @media (max-width: 968px) {
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .hero {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 2rem;
-            }
-
-            .hero-content {
-                padding: 1rem;
-            }
-
-            .dynamic-name {
-                font-size: 2.8rem;
-            }
-
-            .workflow-line {
-                left: 30px;
-            }
-
-            .workflow-item {
-                flex-direction: row !important;
-                margin: 4rem 0;
-            }
-
-            .workflow-content {
-                margin-left: 100px;
-                min-height: auto;
-                padding: 1.5rem;
-            }
-
-            .workflow-marker {
-                width: 60px;
-                height: 60px;
-                margin: 0 1rem;
-                font-size: 1.2rem;
-            }
-
-            .theme-toggle {
-                top: 1rem;
-                right: 1rem;
-                width: 50px;
-                height: 50px;
-            }
-
-            .theme-toggle i {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .workflow-content {
-                margin-left: 80px;
-            }
-
-            .workflow-marker {
-                width: 50px;
-                height: 50px;
-                margin: 0 0.5rem;
-                font-size: 1rem;
-            }
-
-            .company {
-                font-size: 1.5rem;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .logo .work {
-            color: #ff6b35;
-        }
-
-        .center-logo {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 36px;
-            color: #333;
-            font-style: italic;
-        }
-
-        .whatsapp-icon {
-            width: 30px;
-            height: 30px;
-            background-color: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .main-content {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .main-title {
-            font-size: 48px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 60px;
-        }
-
-        .main-title .need {
-            font-style: italic;
-            text-decoration: underline;
-            text-decoration-color: #ff6b35;
-            text-decoration-thickness: 3px;
-        }
-
-        .cards-container {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 500px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .card {
-            position: absolute;
-            width: 280px;
-            height: 380px;
-            border-radius: 20px;
-            padding: 30px;
-            color: white;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transform-origin: center;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.05) !important;
-            z-index: 10;
-        }
-
-        .card-icon {
-            position: absolute;
-            top: -15px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-        }
-
-        .card-title {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            margin-top: 20px;
-        }
-
-        .card-list {
-            list-style: none;
-        }
-
-        .card-list li {
-            margin-bottom: 12px;
-            font-size: 16px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .card-list li:before {
-            content: "♦";
-            position: absolute;
-            left: 0;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        /* Brand Card */
-        .brand-card {
-            background: linear-gradient(135deg, #2d8659, #4a9d6f);
-            left: 0;
-            top: 50px;
-            transform: rotate(-8deg);
-            z-index: 1;
-        }
-
-        /* Social Card */
-        .social-card {
-            background: linear-gradient(135deg, #4285f4, #6fa8f5);
-            left: 200px;
-            top: 20px;
-            transform: rotate(-3deg);
-            z-index: 2;
-        }
-
-        /* Activation Card */
-        .activation-card {
-            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
-            left: 400px;
-            top: 0px;
-            transform: rotate(2deg);
-            z-index: 3;
-        }
-
-        /* Video Production Card */
-        .video-card {
-            background: linear-gradient(135deg, #8e44ad, #a569bd);
-            left: 600px;
-            top: 30px;
-            transform: rotate(-2deg);
-            z-index: 4;
-        }
-
-        /* Partners Card */
-        .partners-card {
-            background: linear-gradient(135deg, #e91e63, #f06292);
-            left: 800px;
-            top: 60px;
-            transform: rotate(5deg);
-            z-index: 5;
-        }
-
-        .heart-icon {
-            position: absolute;
-            top: -10px;
-            right: 15px;
-            font-size: 40px;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .camera-icon {
-            font-size: 30px;
-        }
-
-        .play-icon {
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: -10px;
-            right: 20px;
-        }
-
-        .sticky-note {
-            position: absolute;
-            top: -20px;
-            right: 10px;
-            width: 80px;
-            height: 80px;
-            background-color: #ffeb3b;
-            transform: rotate(15deg);
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .diamond-icon {
-            position: absolute;
-            top: -15px;
-            right: 25px;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: rotate(45deg);
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .cards-container {
-                height: 800px;
-                flex-direction: column;
-            }
-
-            .card {
-                position: relative;
-                margin: 20px 0;
-                transform: none !important;
-                left: 0 !important;
-                top: 0 !important;
-            }
-
-            .main-title {
-                font-size: 32px;
-            }
-
-            .header {
-                padding: 15px 20px;
-            }
-
-            .services-container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 20px;
-            }
-
-            .header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 60px;
-                border-bottom: 1px solid #333;
-                padding-bottom: 20px;
-            }
-
-            .work-text {
-                font-size: 48px;
-                font-weight: bold;
-                color: #fff;
-            }
-
-            .trums-text {
-                font-size: 48px;
-                font-weight: bold;
-                color: #fff;
-                text-align: right;
-            }
-
-            .call-us {
-                text-align: center;
-                margin-bottom: 80px;
-            }
-
-            .call-us-title {
-                font-size: 24px;
-                color: #fff;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
-
-            .call-us-subtitle {
-                font-size: 14px;
-                color: #ccc;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-
-            .services-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 40px;
-            }
-
-            .service-column {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .service-title {
-                font-size: 18px;
-                font-weight: bold;
-                color: #fff;
-                margin-bottom: 30px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-
-            .service-items {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .service-item {
-                font-size: 14px;
-                color: #ccc;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-            }
-
-            @media (max-width: 968px) {
-                .services-grid {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
-
-            @media (max-width: 640px) {
-                .services-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-
-            .code-content {
-                padding: 2rem;
-                color: #c0caf5;
-                font-family: 'Monaco', 'Consolas', monospace;
-                font-size: 0.9rem;
-                height: 100%;
-                overflow-y: auto;
-                scroll-behavior: smooth;
-                /* Smooth scrolling */
-            }
-
-            /* Custom scrollbar for code editor */
-            .code-content::-webkit-scrollbar {
-                width: 8px;
-            }
-
-            .code-content::-webkit-scrollbar-track {
-                background: #1a1b26;
-            }
-
-            .code-content::-webkit-scrollbar-thumb {
-                background: #565f89;
-                border-radius: 4px;
-            }
-
-            .code-content::-webkit-scrollbar-thumb:hover {
-                background: #737aa2;
-            }
-
-            /* For experience animations */
-            .experience-animation .code-content {
-                padding: 1rem;
-                font-size: 0.8rem;
-                max-height: 200px;
-                /* Ensure it doesn't grow too much */
-            }
-
-            /* Ensure code containers are properly sized */
-            .code-window {
-                width: 90%;
-                height: 80%;
-                background: #1a1b26;
-                border-radius: 12px;
-                overflow: hidden;
-                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-                display: flex;
-                flex-direction: column;
-            }
-
-            .experience-animation {
-                height: 200px;
-                background: #1a1b26;
-                border-radius: 12px;
-                overflow: hidden;
-                margin-top: 1.5rem;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-                display: flex;
-                flex-direction: column;
-            }
-
-            /* Prevent horizontal overflow */
-            .code-line {
-                margin-bottom: 0.5rem;
-                opacity: 0;
-                animation: typeLine 0.5s forwards;
-                word-wrap: break-word;
-                white-space: pre-wrap;
-                overflow-wrap: break-word;
-            }
-
-            /* Mobile responsiveness for code editors */
-            @media (max-width: 768px) {
-                .code-content {
-                    padding: 1rem;
-                    font-size: 0.8rem;
-                }
-
-                .experience-animation .code-content {
-                    padding: 0.8rem;
-                    font-size: 0.75rem;
-                }
-
-                .code-line {
-                    font-size: 0.8rem;
-                }
-            }
-    </style>
-
-
-    <!-- Optimized JSON-LD Structured Data for Arvind Kumar Sahu -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-
-  "name": "Arvind Kumar Sahu",
-  "alternateName": ["Arvind", "Arvind Kumar"],
-  "jobTitle": "Backend Developer",
-  "description": "Backend Developer with 5+ years experience building scalable microservices and distributed systems using Node.js, Golang, TypeScript, AWS, Docker, PostgreSQL, Redis, Kafka, and modern backend architectures.",
-
-  "image": "https://arvind-sahu.github.io/profile.png",
-  "email": "mailto:arvindkumar93258@gmail.com",
-  "url": "https://arvind-sahu.github.io",
-
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Indian Institute of Information Technology, Nagpur"
-  },
-
-  "knowsAbout": [
-    "JavaScript", "TypeScript", "Golang", "C", "C++",
-    "Node.js", "NestJS", "Fastify", "FastAPI",
-    "MySQL", "PostgreSQL", "MongoDB", "Redis",
-    "BullMQ", "Kafka",
-    "Docker", "Serverless", "Microservices",
-    "AWS", "S3", "EC2", "CloudWatch", "Lambda",
-    "Nginx", "DynamoDB", "Elasticsearch", "ELK Stack",
-    "Backend Architecture", "System Design"
-  ],
-
-  "sameAs": [
-    "https://www.github.com/arvind-sahu",
-    "https://www.linkedin.com/in/arvindkumar93258"
-  ]
-}
-</script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arvind Kumar Sahu | Official Website of Arvind Kumar Sahu — Senior Software Engineer, IIIT Nagpur, Bengaluru</title>
+  <meta name="description" content="Official website of Arvind Kumar Sahu (gopherarvind, GitHub arvind-sahu). Arvind Kumar Sahu is a Senior Software Engineer (SSE) in Bengaluru, IIIT Nagpur CSE alumnus. Node.js, Golang, NestJS, AWS. Email arvindkumar93258@gmail.com." />
+  <meta name="author" content="Arvind Kumar Sahu" />
+  <meta name="copyright" content="Arvind Kumar Sahu" />
+  <meta name="application-name" content="Arvind Kumar Sahu" />
+  <meta name="keywords" content="Arvind Kumar Sahu, Arvind Kumar Sahu official website, Arvind Kumar Sahu software engineer, Arvind Kumar Sahu IIIT Nagpur, Arvind Kumar Sahu Bengaluru, Arvind Sahu, gopherarvind, arvind-sahu, Senior Software Engineer, SSE, Node.js developer, Golang developer, NestJS developer, Full stack developer with AWS, Backend developer with AWS" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Bengaluru" />
+  <meta name="geo.position" content="12.9716;77.5946" />
+  <meta name="ICBM" content="12.9716, 77.5946" />
+  <link rel="canonical" href="https://arvind-sahu.github.io/" />
+  <link rel="me" href="https://github.com/arvind-sahu" />
+  <link rel="me" href="https://www.linkedin.com/in/gopherarvind/" />
+  <link rel="me" href="https://orcid.org/0009-0006-6710-9360" />
+  <link rel="alternate" hreflang="en" href="https://arvind-sahu.github.io/" />
+  <link rel="alternate" hreflang="x-default" href="https://arvind-sahu.github.io/" />
+
+  <meta property="og:title" content="Arvind Kumar Sahu | Official Website — Senior Software Engineer" />
+  <meta property="og:description" content="Official website of Arvind Kumar Sahu. Senior Software Engineer in Bengaluru. IIIT Nagpur. Node.js, Golang, NestJS, AWS." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://arvind-sahu.github.io/" />
+  <meta property="og:site_name" content="Arvind Kumar Sahu — Senior Software Engineer" />
+  <meta property="og:image" content="https://arvind-sahu.github.io/profile.png" />
+  <meta property="og:image:alt" content="Arvind Kumar Sahu, Senior Software Engineer and Golang / Node.js developer" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="profile:first_name" content="Arvind" />
+  <meta property="profile:last_name" content="Kumar Sahu" />
+  <meta property="profile:username" content="gopherarvind" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arvind Kumar Sahu | Senior Software Engineer (SSE)" />
+  <meta name="twitter:description" content="Senior backend and full-stack developer with AWS. Node.js, NestJS, Golang. 6+ years. Bengaluru." />
+  <meta name="twitter:image" content="https://arvind-sahu.github.io/profile.png" />
+
+  <meta name="theme-color" content="#06080c" />
+  <meta name="apple-mobile-web-app-title" content="Arvind Sahu" />
+  <link rel="icon" type="image/png" href="https://arvind-sahu.github.io/profile.png" />
+  <link rel="apple-touch-icon" href="https://arvind-sahu.github.io/profile.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="author" href="/humans.txt" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink: #06080c;
+      --panel: #10151c;
+      --panel-2: #161d26;
+      --line: rgba(232, 176, 112, 0.16);
+      --gopher: #00add8;
+      --gopher-dim: rgba(0, 173, 216, 0.14);
+      --copper: #e8b070;
+      --copper-dim: rgba(232, 176, 112, 0.14);
+      --cream: #f3eee6;
+      --muted: #9aa4b0;
+      --ok: #3dd68c;
+      --radius: 22px;
+      --nav-h: 76px;
+      --max: 1140px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Outfit, system-ui, sans-serif;
+      background: var(--ink);
+      color: var(--cream);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--gopher); text-decoration: none; }
+    a:hover { color: var(--copper); }
+    button, input, textarea { font-family: inherit; }
+    .skip {
+      position: absolute; left: -999px; top: 0;
+      background: var(--copper); color: #111; padding: 0.6rem 1rem; z-index: 9999;
+    }
+    .skip:focus { left: 1rem; top: 1rem; }
+
+    #mesh {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    }
+    .grain {
+      position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.07;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    }
+    .cursor-glow {
+      position: fixed; width: 420px; height: 420px; border-radius: 50%;
+      pointer-events: none; z-index: 1; mix-blend-mode: screen;
+      background: radial-gradient(circle, rgba(0,173,216,0.12), transparent 62%);
+      transform: translate(-50%, -50%);
+      transition: opacity 0.4s;
+    }
+    .wrap { position: relative; z-index: 2; }
+    .container { width: min(var(--max), calc(100% - 2.4rem)); margin: 0 auto; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+      display: flex; align-items: center; z-index: 50;
+      background: rgba(6, 8, 12, 0.72);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-row { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+    .logo {
+      font-family: Syne, sans-serif; font-weight: 800; letter-spacing: -0.04em; font-size: 1.15rem;
+      color: var(--cream);
+    }
+    .logo span { color: var(--gopher); }
+    .nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: 0.92rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--cream); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      border: 0; cursor: pointer; border-radius: 999px; font-weight: 600;
+      padding: 0.78rem 1.25rem; transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+    }
+    .btn-primary {
+      background: linear-gradient(120deg, var(--gopher), #5eead4);
+      color: #041016 !important;
+      box-shadow: 0 10px 30px rgba(0, 173, 216, 0.22);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,173,216,0.32); color: #041016 !important; }
+    .btn-ghost {
+      background: transparent; color: var(--cream) !important;
+      border: 1px solid var(--line);
+    }
+    .btn-ghost:hover { border-color: var(--copper); color: var(--copper) !important; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer;
+    }
+    .hamburger span { width: 24px; height: 2px; background: var(--cream); }
+
+    section { padding: 6.5rem 0; }
+    .kicker {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--copper); letter-spacing: 0.16em; text-transform: uppercase;
+      font-size: 0.72rem; font-weight: 700; margin-bottom: 0.9rem;
+    }
+    .kicker::before {
+      content: ""; width: 28px; height: 1px; background: var(--copper);
+    }
+    h1, h2, .display {
+      font-family: Syne, sans-serif; letter-spacing: -0.045em; line-height: 1.08;
+    }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.7rem; }
+    .lede { color: var(--muted); max-width: 640px; font-size: 1.05rem; }
+
+    #hero {
+      min-height: 100vh; display: flex; align-items: center;
+      padding: calc(var(--nav-h) + 3rem) 0 4rem;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;
+    }
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.35rem 0.8rem; border-radius: 999px;
+      border: 1px solid rgba(61, 214, 140, 0.35);
+      color: var(--ok); font-size: 0.82rem; font-weight: 600;
+      background: rgba(61, 214, 140, 0.08); margin-bottom: 1.2rem;
+    }
+    .status-pill i {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--ok);
+      box-shadow: 0 0 0 0 rgba(61,214,140,0.7);
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      70% { box-shadow: 0 0 0 10px transparent; }
+    }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); margin-bottom: 0.85rem; }
+    h1 em { font-style: normal; color: var(--gopher); }
+    .role-line {
+      font-size: clamp(1.05rem, 2vw, 1.35rem); color: var(--muted); min-height: 2.2rem; margin-bottom: 1.2rem;
+    }
+    .role-line b {
+      color: var(--copper);
+      background: linear-gradient(90deg, transparent, var(--copper-dim), transparent);
+      background-size: 200% 100%;
+      animation: sheen 3.2s linear infinite;
+    }
+    @keyframes sheen { to { background-position: -200% 0; } }
+    .hero p { color: var(--muted); max-width: 540px; margin-bottom: 1.8rem; }
+    .hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .meta-row { display: flex; gap: 1.4rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; }
+    .meta-row strong { color: var(--cream); font-weight: 600; }
+
+    .orbit-wrap {
+      position: relative; width: min(100%, 420px); aspect-ratio: 1; margin: 0 auto;
+    }
+    .orbit, .orbit-2, .orbit-3 {
+      position: absolute; inset: 8%; border-radius: 50%;
+      border: 1px dashed rgba(0,173,216,0.28);
+      animation: spin 22s linear infinite;
+    }
+    .orbit-2 { inset: 0; border-color: rgba(232,176,112,0.22); animation-duration: 34s; animation-direction: reverse; }
+    .orbit-3 { inset: 18%; border-style: solid; border-color: rgba(255,255,255,0.05); animation-duration: 16s; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .chip {
+      position: absolute; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
+      padding: 0.35rem 0.6rem; border-radius: 999px;
+      background: var(--panel); border: 1px solid var(--line); color: var(--cream);
+      white-space: nowrap;
+    }
+    .orbit-wrap .chip:nth-child(4) { top: 6%; left: 38%; }
+    .orbit-wrap .chip:nth-child(5) { top: 28%; right: -4%; }
+    .orbit-wrap .chip:nth-child(6) { bottom: 18%; right: 2%; }
+    .orbit-wrap .chip:nth-child(7) { bottom: 4%; left: 32%; }
+    .orbit-wrap .chip:nth-child(8) { top: 36%; left: -6%; }
+    .portrait {
+      position: absolute; inset: 24%; border-radius: 28px; overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+      transform: rotate(-3deg);
+      animation: floaty 6s ease-in-out infinite;
+    }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; }
+    @keyframes floaty {
+      50% { transform: rotate(-3deg) translateY(-10px); }
+    }
+
+    .stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+      margin-top: -1.5rem; padding-bottom: 2rem;
+    }
+    .stat {
+      background: linear-gradient(180deg, var(--panel), #0c1016);
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem 1.2rem;
+      transition: transform 0.35s, border-color 0.35s;
+    }
+    .stat:hover { transform: translateY(-6px); border-color: rgba(0,173,216,0.45); }
+    .stat b {
+      display: block; font-family: Syne, sans-serif; font-size: 2rem; color: var(--copper);
+      letter-spacing: -0.04em;
+    }
+    .stat span { color: var(--muted); font-size: 0.9rem; }
+
+    .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem; align-items: start; }
+    .card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem;
+    }
+    .keyword-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    .tag {
+      font-size: 0.78rem; padding: 0.38rem 0.7rem; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--cream); background: var(--gopher-dim);
+    }
+    .about-points { list-style: none; display: grid; gap: 0.8rem; }
+    .about-points li {
+      padding-left: 1.1rem; position: relative; color: var(--muted);
+    }
+    .about-points li::before {
+      content: ""; position: absolute; left: 0; top: 0.55rem; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--gopher);
+    }
+
+    .timeline { position: relative; display: grid; gap: 1.2rem; }
+    .timeline::before {
+      content: ""; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px;
+      background: linear-gradient(var(--gopher), var(--copper));
+      transform-origin: top; transform: scaleY(0);
+      animation: none;
+    }
+    .timeline.drawn::before { animation: grow 1.4s ease forwards; }
+    @keyframes grow { to { transform: scaleY(1); } }
+    .job {
+      display: grid; grid-template-columns: 28px 1fr; gap: 1rem; align-items: start;
+    }
+    .dot {
+      width: 14px; height: 14px; margin: 8px 0 0 5px; border-radius: 50%;
+      background: var(--ink); border: 2px solid var(--gopher);
+      box-shadow: 0 0 0 6px rgba(0,173,216,0.08);
+    }
+    .job-card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1.4rem 1.5rem; transition: transform 0.3s, border-color 0.3s;
+    }
+    .job-card:hover { transform: translateX(6px); border-color: rgba(232,176,112,0.4); }
+    .job-top { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
+    .job h3 { font-size: 1.15rem; }
+    .job h3 span { color: var(--gopher); font-weight: 600; }
+    .when { color: var(--copper); font-size: 0.85rem; font-weight: 600; }
+    .role { color: var(--muted); font-size: 0.92rem; margin-bottom: 0.8rem; }
+    .job ul { padding-left: 1.1rem; color: var(--muted); display: grid; gap: 0.4rem; }
+    .stack-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; }
+    .mini {
+      font-size: 0.72rem; color: var(--muted); border: 1px solid var(--line); padding: 0.2rem 0.5rem; border-radius: 999px;
+    }
+
+    .marquee-wrap { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); margin: 2rem 0 1.5rem; }
+    .marquee { display: flex; gap: 0.7rem; width: max-content; animation: slide 32s linear infinite; }
+    .marquee.reverse { animation-direction: reverse; animation-duration: 38s; }
+    @keyframes slide { to { transform: translateX(-50%); } }
+    .pill {
+      padding: 0.55rem 0.95rem; border-radius: 999px; border: 1px solid var(--line);
+      background: var(--panel); white-space: nowrap; font-weight: 600; font-size: 0.88rem;
+    }
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .skill-card h3 { font-size: 1.05rem; margin-bottom: 0.6rem; color: var(--copper); }
+
+    .bento { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem; }
+    .project {
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 1.5rem; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between;
+      transform-style: preserve-3d; transition: transform 0.2s, border-color 0.2s;
+    }
+    .project:hover { border-color: rgba(0,173,216,0.45); }
+    .project h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .project p { color: var(--muted); }
+
+    .edu-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem; }
+    details {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 1rem 1.2rem;
+    }
+    details + details { margin-top: 0.7rem; }
+    summary { cursor: pointer; font-weight: 650; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    details p { color: var(--muted); margin-top: 0.6rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.5rem; }
+    form { display: grid; gap: 0.8rem; }
+    input, textarea {
+      width: 100%; background: #0b0f14; border: 1px solid var(--line); color: var(--cream);
+      border-radius: 14px; padding: 0.85rem 1rem; outline: none;
+    }
+    input:focus, textarea:focus { border-color: var(--gopher); }
+    .links { display: grid; gap: 0.7rem; }
+    .links a {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 1.1rem; border-radius: 16px; border: 1px solid var(--line);
+      background: var(--panel); color: var(--cream);
+    }
+    .links a:hover { border-color: var(--gopher); }
+
+    footer {
+      border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--muted); font-size: 0.88rem;
+    }
+    .foot { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: 0.8s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .about-grid, .skills-grid, .bento, .edu-grid, .contact-grid, .stats {
+        grid-template-columns: 1fr;
+      }
+      .nav-links { display: none; position: absolute; top: var(--nav-h); right: 1.2rem; flex-direction: column;
+        background: var(--panel); padding: 1rem; border-radius: 16px; border: 1px solid var(--line); }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .orbit-wrap { margin-top: 1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Theme Toggle - Improved -->
-    <button class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon" id="themeIcon"></i>
-    </button>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="mesh" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="glow" aria-hidden="true"></div>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="dynamic-name" id="dynamicName">Arvind Kumar Sahu</h1>
-                <div class="typing-text" id="typingText"></div>
-                <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2.5rem;">
-                    IIIT Nagpur alumnus • 5+ years building scalable applications • Passionate about system architecture
-                </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-                    <button onclick="scrollToSection('experience')"
-                        style="background: var(--gradient); color: white; border: none; padding: 15px 35px; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;">
-                        View My Journey
-                    </button>
-                    <button onclick="scrollToSection('contact')"
-                        style="background: transparent; color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;">
-                        Get in Touch
-                    </button>
-                </div>
-            </div>
+  <div class="wrap">
+    <nav>
+      <div class="container nav-row">
+        <a class="logo" href="#hero">AK<span>S</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary" href="#contact">Hire me</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-            <div class="hero-animation">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-dot dot-red"></div>
-                        <div class="window-dot dot-yellow"></div>
-                        <div class="window-dot dot-green"></div>
-                    </div>
-                    <div class="code-content" id="codeContent">
-                        <!-- Code will be inserted by JavaScript -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="experience" id="experience">
-            <h2 class="section-title">Professional Journey</h2>
-            <div class="workflow">
-                <div class="workflow-line"></div>
-
-                <!-- Current Company First -->
-                <div class="workflow-item fade-in">
-                    <div class="workflow-content">
-                        <div class="company">Aquera Labs</div>
-                        <div class="duration">2023 - Present | Lead Backend Developer</div>
-                        <ul class="achievements">
-                            <li>Architected microservices handling 2M+ daily requests</li>
-                            <li>Led team of 5 developers in system redesign</li>
-                            <li>Automated employee onboarding with 90% efficiency gain</li>
-                            <li>Built integration systems connecting 10+ platforms</li>
-                        </ul>
-                        <div class="experience-animation">
-                            <div class="code-content" id="aqueraCode">
-                                <!-- Aquera code animation will go here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="workflow-marker">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                </div>
-
-                <div class="workflow-item fade-in">
-                    <div class="workflow-content">
-                        <div class="company">Sarvm.ai</div>
-                        <div class="duration">2021 - 2023 | Senior Backend Engineer</div>
-                        <ul class="achievements">
-                            <li>Built e-commerce platform similar to Blinkit/Zepto</li>
-                            <li>Implemented real-time inventory management</li>
-                            <li>Developed machine learning pipelines for predictive analysis</li>
-                            <li>Improved API response times by 65% through caching strategies</li>
-                        </ul>
-                        <div class="experience-animation">
-                            <div class="code-content" id="sarvmCode">
-                                <!-- Sarvm code animation will go here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="workflow-marker">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                </div>
-
-                <div class="workflow-item fade-in">
-                    <div class="workflow-content">
-                        <div class="company">Tilli Software</div>
-                        <div class="duration">2019 - 2021 | Full-Stack Developer</div>
-                        <ul class="achievements">
-                            <li>Developed payment gateway integration for 15+ banks</li>
-                            <li>Built secure transaction processing system</li>
-                            <li>Created real-time payment tracking dashboard</li>
-                            <li>Optimized application performance leading to 50% faster load times</li>
-                        </ul>
-                        <div class="experience-animation">
-                            <div class="code-content" id="tilliCode">
-                                <!-- Tilli code animation will go here -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="workflow-marker">
-                        <i class="fas fa-code"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <h1 class="main-title">
-            call us if you <span class="need">need:</span>
-        </h1>
-
-        <div class="cards-container">
-            <!-- Brand Card -->
-            <div class="card brand-card">
-                <div class="card-icon camera-icon">📷</div>
-                <h2 class="card-title">brand</h2>
-                <ul class="card-list">
-                    <li>Brand Strategy</li>
-                    <li>360° Creative</li>
-                    <li>Art Direction</li>
-                    <li>Copywriting</li>
-                    <li>Editing</li>
-                    <li>Motion Graphics</li>
-                    <li>DTP</li>
-                </ul>
-            </div>
-
-            <!-- Social Card -->
-            <div class="card social-card">
-                <div class="diamond-icon"></div>
-                <h2 class="card-title">social</h2>
-                <ul class="card-list">
-                    <li>Social Strategy</li>
-                    <li>Social Media</li>
-                    <li>TikTok</li>
-                    <li>Influencer</li>
-                    <li>Scheduling</li>
-                    <li>Community</li>
-                    <li>Social Ads</li>
-                </ul>
-            </div>
-
-            <!-- Activation Card -->
-            <div class="card activation-card">
-                <div class="sticky-note">⚡</div>
-                <h2 class="card-title">activation</h2>
-                <ul class="card-list">
-                    <li>Activation Strategy</li>
-                    <li>Event Planning</li>
-                    <li>Art Direction</li>
-                    <li>Production</li>
-                </ul>
-            </div>
-
-            <!-- Video Production Card -->
-            <div class="card video-card">
-                <div class="play-icon">▶</div>
-                <h2 class="card-title">video production</h2>
-                <ul class="card-list">
-                    <li>Campaign video</li>
-                    <li>Branded content</li>
-                    <li>Social content</li>
-                    <li>Marketing material</li>
-                </ul>
-            </div>
-
-            <!-- Partners Card -->
-            <div class="card partners-card">
-                <div class="heart-icon">♥</div>
-                <h2 class="card-title">with Partners</h2>
-                <ul class="card-list">
-                    <li>PR/Journalism</li>
-                    <li>3D / VFX</li>
-                    <li>food styling</li>
-                    <li>Photography</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Skills Section -->
-        <section class="skills" id="skills">
-            <h2 class="section-title">Tech Stack</h2>
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend</h3>
-                    <p>Node.js • NestJS • Golang • Python • Express • FastAPI</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3>Frontend</h3>
-                    <p>React • Next.js • TypeScript • Tailwind • Redux</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database</h3>
-                    <p>PostgreSQL • MongoDB • Redis • Elasticsearch • DynamoDB</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>DevOps & Cloud</h3>
-                    <p>AWS • Docker • Kubernetes • GitHub Actions</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section style="padding: 6rem 0; text-align: center;" id="contact">
-            <h2 class="section-title">Let's Build Together</h2>
-            <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 3rem;">
-                Ready to turn your ideas into exceptional digital experiences
+    <main id="main">
+      <section id="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="status-pill"><i></i> Official website of Arvind Kumar Sahu · Immediately available</div>
+            <h1>Arvind Kumar <em>Sahu</em></h1>
+            <p class="role-line">Senior Software Engineer · <b id="role">Node.js developer</b></p>
+            <p>
+              This is the official website of <strong>Arvind Kumar Sahu</strong> — a
+              <strong>Senior Software Engineer</strong> in Bengaluru and IIIT Nagpur CSE alumnus.
+              Backend-focused <strong>full-stack developer with AWS</strong> with <strong>6+ years</strong> shipping
+              production systems in fintech and SaaS:
+              <strong>Node.js</strong>, <strong>NestJS</strong>, <strong>Golang</strong>, and cloud-native AWS.
             </p>
-            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-                <a href="mailto:arvindkumar93258@gmail.com"
-                    style="background: var(--gradient); color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://linkedin.com/in/arvindkumar93258"
-                    style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/arvind-sahu"
-                    style="background: var(--surface); color: var(--text); border: 2px solid var(--border); padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#experience">View the journey</a>
+              <a class="btn btn-ghost" href="mailto:arvindkumar93258@gmail.com">Email me</a>
             </div>
-        </section>
-    </div>
+            <div class="meta-row">
+              <span><strong>IIIT Nagpur</strong> · B.Tech CSE</span>
+              <span><strong>GATE 2022</strong> AIR 1800</span>
+              <span><strong>SSE</strong> · end-to-end developer</span>
+            </div>
+          </div>
+          <div class="orbit-wrap" aria-hidden="true">
+            <div class="orbit-2"></div>
+            <div class="orbit"></div>
+            <div class="orbit-3"></div>
+            <span class="chip">Golang</span>
+            <span class="chip">NestJS</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">SSE</span>
+            <div class="portrait">
+              <img src="profile.png" width="420" height="420" alt="Arvind Kumar Sahu, Senior Software Engineer and Golang Node.js developer in Bengaluru" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <script>
-        // Dynamic Fonts for Name
-        const fonts = [
-            "'Playfair Display', serif",
-            "'Montserrat', sans-serif",
-            "'Poppins', sans-serif",
-            "'Raleway', sans-serif",
-            "'Inter', sans-serif",
-            "'Space Grotesk', sans-serif",
-            "'Syne', sans-serif",
-            "'Clash Display', sans-serif"
-        ];
+      <div class="container stats">
+        <article class="stat reveal"><b data-count="6">0</b><span>Years building production software</span></article>
+        <article class="stat reveal"><b data-count="380">0</b><span>Enterprise SaaS connectors at Aquera</span></article>
+        <article class="stat reveal"><b data-count="70">0</b><span>Faster HR–IT onboarding automation</span></article>
+        <article class="stat reveal"><b data-count="40">0</b><span>Lower API latency on payments</span></article>
+      </div>
 
-        // Typing Text Variations
-        const titles = [
-            "Full-Stack Developer",
-            "Backend Architect",
-            "System Designer",
-            "Tech Lead",
-            "Problem Solver",
-            "Code Craftsman"
-        ];
+      <section id="about">
+        <div class="container about-grid">
+          <div class="reveal">
+            <p class="kicker">About</p>
+            <h2>Senior backend developer who still ships the full stack</h2>
+            <p class="lede" style="margin: 1rem 0 1.2rem;">
+              I am <strong>Arvind Kumar Sahu</strong> (<em>gopherarvind</em> on LinkedIn, <em>arvind-sahu</em> on GitHub) —
+              a <strong>Senior Software Engineer</strong>, <strong>Go developer</strong>, and
+              <strong>NestJS developer</strong> based in Bengaluru. Recruiters searching for an
+              <strong>SSE</strong>, <strong>Node.js developer</strong>, <strong>Golang developer</strong>,
+              <strong>senior backend developer</strong>, or <strong>full-stack developer with AWS</strong>
+              will find the same person: I own architecture, APIs, data, cloud, and delivery end to end.
+            </p>
+            <ul class="about-points">
+              <li>Low-latency microservices and REST APIs on Node.js (NestJS) and Golang (Gin, goroutines, GORM).</li>
+              <li>Fintech payments ready for ~10K RPS, RBAC, refunds, invoices, and BBPS / ERP integrations.</li>
+              <li>Identity and HR integrations across Workday, ADP, Dayforce, Paylocity, Zoho, and more.</li>
+              <li>AWS Lambda, S3, EC2, CloudWatch, Docker, Kubernetes, Redis, PostgreSQL, DynamoDB, Elasticsearch.</li>
+            </ul>
+          </div>
+          <aside class="card reveal">
+            <p class="kicker">Hire for</p>
+            <h3 style="font-family:Syne,sans-serif;margin-bottom:0.6rem;">Roles I am a strong fit for</h3>
+            <div class="keyword-cloud">
+              <span class="tag">Senior Software Engineer</span>
+              <span class="tag">SSE</span>
+              <span class="tag">Node.js developer</span>
+              <span class="tag">Go developer</span>
+              <span class="tag">Golang developer</span>
+              <span class="tag">Senior backend developer</span>
+              <span class="tag">Full stack developer</span>
+              <span class="tag">NestJS developer</span>
+              <span class="tag">Full stack developer with AWS</span>
+              <span class="tag">Backend developer with AWS</span>
+              <span class="tag">End-to-end developer</span>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-        // Theme Toggle with better visibility
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
+      <section id="experience">
+        <div class="container">
+          <p class="kicker">Experience</p>
+          <h2>Professional journey</h2>
+          <p class="lede" style="margin-bottom:2rem;">Updated from LinkedIn — <a href="https://www.linkedin.com/in/gopherarvind/">linkedin.com/in/gopherarvind</a></p>
+          <div class="timeline" id="timeline">
+            <article class="job reveal">
+              <div class="dot"></div>
+              <div class="job-card">
+                <div class="job-top">
+                  <h3>Stealth Startup · <span>Software Engineer</span></h3>
+                  <span class="when">Jun 2026 – Present</span>
+                </div>
+                <p class="role">Current role · backend-focused full-stack delivery in a stealth product environment.</p>
+                <ul>
+                  <li>Owning architecture and end-to-end delivery of production services — scalability, reliability, and maintainability.</li>
+                  <li>Shipping Node.js / NestJS and Golang APIs with AWS-backed data stores and observability.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="job reveal">
+              <div class="dot"></div>
+              <div class="job-card">
+                <div class="job-top">
+                  <h3>InCommon · <span>Senior Software Engineer</span></h3>
+                  <span class="when">Dec 2025 – Apr 2026</span>
+                </div>
+                <p class="role">SSE on Autodesk Assistant for Revit and AutoCAD.</p>
+                <ul>
+                  <li>Built product features for Autodesk Assistant across Revit and AutoCAD workflows.</li>
+                  <li>Senior ownership of backend services, integrations, and delivery quality.</li>
+                </ul>
+                <div class="stack-row"><span class="mini">Senior Software Engineer</span><span class="mini">Autodesk</span><span class="mini">Revit</span><span class="mini">AutoCAD</span></div>
+              </div>
+            </article>
+            <article class="job reveal">
+              <div class="dot"></div>
+              <div class="job-card">
+                <div class="job-top">
+                  <h3>Aquera · <span>Member of Technical Staff</span></h3>
+                  <span class="when">Aug 2024 – Dec 2025 · Bengaluru</span>
+                </div>
+                <p class="role">HR and identity integration platform — 1,000+ pre-built connectors.</p>
+                <ul>
+                  <li>Designed and optimized 20+ enterprise SaaS connectors and pipelines for Workday, ADP, Paylocity, Dayforce, Zoho, Paycor, Jira, and GitHub — part of a 380+ application integration surface.</li>
+                  <li>Improved HR-to-IT onboarding automation efficiency by 70% with workflow orchestration, async processing, and event-driven services.</li>
+                  <li>Raised reliability and throughput with Redis caching, distributed queues, DynamoDB tuning, and fault-tolerant microservice patterns.</li>
+                </ul>
+                <div class="stack-row">
+                  <span class="mini">Golang</span><span class="mini">Gin</span><span class="mini">GORM</span><span class="mini">NestJS</span>
+                  <span class="mini">PostgreSQL</span><span class="mini">DynamoDB</span><span class="mini">Redis</span>
+                  <span class="mini">AWS Lambda</span><span class="mini">Elasticsearch</span>
+                </div>
+              </div>
+            </article>
+            <article class="job reveal">
+              <div class="dot"></div>
+              <div class="job-card">
+                <div class="job-top">
+                  <h3>Tilli Software · <span>Associate Software Engineer 2</span></h3>
+                  <span class="when">Jan 2023 – Aug 2024 · Hyderabad</span>
+                </div>
+                <p class="role">Fintech — Monay payment gateway and Beacon invoicing.</p>
+                <ul>
+                  <li>Built Monay, a B2B/B2C global payment gateway: payment links, capture, refunds/voids, admin tooling, and RBAC.</li>
+                  <li>Shipped Beacon for invoice creation, processing, and ERP / BBPS billing integrations.</li>
+                  <li>Hardened a payment platform for ~10K RPS readiness and cut API latency by 40%.</li>
+                </ul>
+                <div class="stack-row">
+                  <span class="mini">Node.js</span><span class="mini">NestJS</span><span class="mini">Next.js</span>
+                  <span class="mini">MySQL</span><span class="mini">Redis</span><span class="mini">AWS</span><span class="mini">Swagger</span>
+                </div>
+              </div>
+            </article>
+            <article class="job reveal">
+              <div class="dot"></div>
+              <div class="job-card">
+                <div class="job-top">
+                  <h3>SarvM.AI / EWNS · <span>Software Developer</span></h3>
+                  <span class="when">May 2021 – Jan 2023 · Gurugram</span>
+                </div>
+                <p class="role">Hyper-local grocery and food delivery — retailer, rider, and customer apps.</p>
+                <ul>
+                  <li>Built Sarvm, a city-scale e-commerce platform for grocery and food delivery (Blinkit / Zepto class of product).</li>
+                  <li>Implemented real-time order, tracking, and fulfillment flows with Node.js, TypeScript, PostgreSQL, MongoDB, and AWS S3.</li>
+                  <li>Ran microservices (auth, load balancing, supporting services) with CloudWatch, EC2, and Kubernetes visibility.</li>
+                </ul>
+                <div class="stack-row">
+                  <span class="mini">Node.js</span><span class="mini">PostgreSQL</span><span class="mini">MongoDB</span>
+                  <span class="mini">AWS</span><span class="mini">Kubernetes</span><span class="mini">Angular</span>
+                </div>
+              </div>
+            </article>
+            <article class="job reveal">
+              <div class="dot"></div>
+              <div class="job-card">
+                <div class="job-top">
+                  <h3>Z Software · <span>Software Developer Intern</span></h3>
+                  <span class="when">Jan 2021 – May 2021 · Nagpur</span>
+                </div>
+                <p class="role">Internship that started a 6+ year engineering path.</p>
+                <ul>
+                  <li>Contributed to product features and learned production engineering practices before joining SarvM.AI.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        // Set initial theme based on user preference
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.dataset.theme = 'dark';
-            themeIcon.className = 'fas fa-sun';
-        } else {
-            document.body.dataset.theme = 'light';
-            themeIcon.className = 'fas fa-moon';
+      <section id="skills">
+        <div class="container">
+          <p class="kicker">Stack</p>
+          <h2>Node.js, Golang, NestJS, and AWS — in production</h2>
+          <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee" id="marquee1"></div>
+          </div>
+          <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee reverse" id="marquee2"></div>
+          </div>
+          <div class="skills-grid">
+            <article class="card skill-card reveal">
+              <h3>Backend</h3>
+              <p>Node.js, NestJS, Express.js, Golang, Gin, goroutines, GORM, Python, REST, GraphQL, microservices, BullMQ, Kafka</p>
+            </article>
+            <article class="card skill-card reveal">
+              <h3>Frontend</h3>
+              <p>React, Next.js, TypeScript, Tailwind CSS, Redux, Angular / Ionic — enough to be a true full-stack developer</p>
+            </article>
+            <article class="card skill-card reveal">
+              <h3>Data &amp; cloud</h3>
+              <p>PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Elasticsearch, AWS Lambda / S3 / EC2 / CloudWatch, Docker, Kubernetes</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="container">
+          <p class="kicker">Selected work</p>
+          <h2>Systems I have designed end to end</h2>
+          <div class="bento" style="margin-top:1.8rem;">
+            <article class="project tilt reveal">
+              <div>
+                <h3>Enterprise SaaS integration platform</h3>
+                <p>Event-driven connectors and onboarding workflows across 380+ HR / IT apps at Aquera. Golang + NestJS + AWS.</p>
+              </div>
+              <div class="stack-row"><span class="mini">Golang</span><span class="mini">NestJS</span><span class="mini">AWS</span><span class="mini">Redis</span></div>
+            </article>
+            <article class="project tilt reveal">
+              <div>
+                <h3>Monay &amp; Beacon · Tilli</h3>
+                <p>Global payment gateway and invoice / BBPS product with RBAC, refunds, and 40% faster APIs.</p>
+              </div>
+              <div class="stack-row"><span class="mini">Node.js</span><span class="mini">Next.js</span><span class="mini">MySQL</span></div>
+            </article>
+            <article class="project tilt reveal">
+              <div>
+                <h3><a href="https://github.com/arvind-sahu/Task-Mgmt">Task-Mgmt</a></h3>
+                <p>Collaboration app on the T3 stack — Next.js, tRPC, Prisma, NextAuth, Postgres, serverless AWS via SST.</p>
+              </div>
+              <div class="stack-row"><span class="mini">TypeScript</span><span class="mini">tRPC</span><span class="mini">AWS</span></div>
+            </article>
+            <article class="project tilt reveal">
+              <div>
+                <h3><a href="https://github.com/arvind-sahu/Library-Management-System">Library Management System</a></h3>
+                <p>IIIT Nagpur library ops — books, staff, search. HTML, CSS, JavaScript, Node.js, SQL, later React.</p>
+              </div>
+              <div class="stack-row"><span class="mini">Node.js</span><span class="mini">SQL</span><span class="mini">React</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="container edu-grid">
+          <div class="card reveal">
+            <p class="kicker">Education</p>
+            <h2 style="font-size:1.8rem;">IIIT Nagpur</h2>
+            <p>B.Tech, Computer Science &amp; Engineering · 2017 – 2021 · CGPA 7.88 / 10</p>
+            <p style="color:var(--muted);margin-top:0.6rem;">GATE 2022 CSE AIR 1800 · TestGorilla: Node.js 99th percentile, Software Engineer 100th percentile, REST APIs 99th, Critical Thinking 100th.</p>
+          </div>
+          <div class="card reveal">
+            <p class="kicker">Proof</p>
+            <h3 style="font-family:Syne,sans-serif;margin-bottom:0.7rem;">Find me everywhere</h3>
+            <p><a href="https://github.com/arvind-sahu">GitHub</a> · <a href="https://www.linkedin.com/in/gopherarvind/">LinkedIn</a> · <a href="https://orcid.org/0009-0006-6710-9360">ORCID</a> · <a href="https://leetcode.com/u/arvind_iiitn">LeetCode</a></p>
+            <p style="color:var(--muted);margin-top:0.7rem;">Recommendation from peers: technical lead energy, architectural judgment, and mentoring that raises the whole team.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container" style="max-width:820px;">
+          <p class="kicker">FAQ</p>
+          <h2>Who is Arvind Kumar Sahu?</h2>
+          <details class="reveal" open>
+            <summary>Who is Arvind Kumar Sahu?</summary>
+            <p><strong>Arvind Kumar Sahu</strong> is a Senior Software Engineer (SSE) based in Bengaluru, India. He is an IIIT Nagpur Computer Science graduate (GATE 2022 AIR 1800). His official website is <a href="https://arvind-sahu.github.io/">arvind-sahu.github.io</a>, GitHub is <a href="https://github.com/arvind-sahu">github.com/arvind-sahu</a>, and LinkedIn is <a href="https://www.linkedin.com/in/gopherarvind/">linkedin.com/in/gopherarvind</a>. ORCID: <a href="https://orcid.org/0009-0006-6710-9360">0009-0006-6710-9360</a>.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is Arvind Kumar Sahu a Senior Software Engineer / SSE?</summary>
+            <p>Yes. Arvind Kumar Sahu is a Senior Software Engineer (SSE) with 6+ years of experience. He held the SSE title at InCommon (Autodesk Assistant) and operates at senior / MTS scope on backend architecture, microservices, and AWS.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is he a Node.js developer, NestJS developer, and Go / Golang developer?</summary>
+            <p>Yes. Production work spans Node.js, NestJS, Express, and Golang (Gin, goroutines, GORM). He is a strong Node.js developer and Golang developer for APIs, workers, and integrations.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is he a senior backend developer and a full-stack developer with AWS?</summary>
+            <p>Yes. He is a senior backend developer first, and a full-stack developer with AWS when the product needs React / Next.js plus Lambda, S3, EC2, CloudWatch, Docker, and Kubernetes. That is also what people mean by backend developer with AWS and end-to-end developer.</p>
+          </details>
+          <details class="reveal">
+            <summary>How do I hire or contact Arvind Kumar Sahu?</summary>
+            <p>Email arvindkumar93258@gmail.com, message <a href="https://www.linkedin.com/in/gopherarvind/">linkedin.com/in/gopherarvind</a>, or use the form below. Portfolio: <a href="https://arvind-sahu.github.io/">arvind-sahu.github.io</a>. GitHub: <a href="https://github.com/arvind-sahu">github.com/arvind-sahu</a>.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="kicker">Contact</p>
+            <h2>Let’s build the next system</h2>
+            <p class="lede" style="margin:1rem 0 1.4rem;">Open to Senior Software Engineer, senior backend, NestJS, Golang, and full-stack-with-AWS roles. Immediate joiner.</p>
+            <div class="links">
+              <a href="mailto:arvindkumar93258@gmail.com"><span>arvindkumar93258@gmail.com</span><span>→</span></a>
+              <a href="https://www.linkedin.com/in/gopherarvind/" rel="me"><span>LinkedIn · gopherarvind</span><span>→</span></a>
+              <a href="https://github.com/arvind-sahu" rel="me"><span>GitHub · arvind-sahu</span><span>→</span></a>
+              <a href="tel:+919325860577"><span>+91 93258 60577</span><span>→</span></a>
+            </div>
+          </div>
+          <form class="card reveal" action="https://formsubmit.co/arvindkumar93258@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio inquiry — arvind-sahu.github.io" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://arvind-sahu.github.io/?sent=1#contact" />
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Work email" required />
+            <textarea name="message" rows="5" placeholder="Role, stack, timeline" required></textarea>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p id="formBanner" style="display:none;color:var(--ok);">Message sent. I will reply shortly.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container foot">
+        <p>© 2026 Arvind Kumar Sahu · Official website of Arvind Kumar Sahu · Senior Software Engineer · Bengaluru</p>
+        <p><a href="/arvind-kumar-sahu.html">About Arvind Kumar Sahu</a> · <a href="https://arvind-sahu.github.io/">arvind-sahu.github.io</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const roles = [
+      "Node.js developer",
+      "Golang developer",
+      "NestJS developer",
+      "Senior backend developer",
+      "Full stack developer with AWS",
+      "Backend developer with AWS",
+      "End-to-end developer",
+      "Senior Software Engineer (SSE)"
+    ];
+    let roleIdx = 0;
+    const roleEl = document.getElementById("role");
+    setInterval(() => {
+      roleIdx = (roleIdx + 1) % roles.length;
+      roleEl.style.opacity = 0;
+      setTimeout(() => { roleEl.textContent = roles[roleIdx]; roleEl.style.opacity = 1; }, 220);
+    }, 2600);
+    roleEl.style.transition = "opacity 0.2s";
+
+    const skills = ["TypeScript", "JavaScript", "Golang", "Node.js", "NestJS", "Express", "Gin", "PostgreSQL", "Redis", "MongoDB", "DynamoDB", "AWS", "Docker", "Kubernetes", "Kafka", "BullMQ", "Next.js", "React", "Elasticsearch", "CI/CD"];
+    const fill = (id, extra) => {
+      const row = [...skills, ...extra, ...skills, ...extra];
+      document.getElementById(id).innerHTML = row.map(s => `<span class="pill">${s}</span>`).join("");
+    };
+    fill("marquee1", ["SSE", "Microservices"]);
+    fill("marquee2", ["Full stack", "End-to-end"]);
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("in"); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+    const tl = document.getElementById("timeline");
+    const tlio = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) tl.classList.add("drawn"); });
+    }, { threshold: 0.15 });
+    tlio.observe(tl);
+
+    const animateCount = (el) => {
+      const target = +el.dataset.count;
+      const suffix = (target === 40 || target === 70) ? "%" : "+";
+      const t0 = performance.now();
+      const tick = (now) => {
+        const p = Math.min(1, (now - t0) / 1200);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll("[data-count]").forEach(animateCount);
+          cio.unobserve(e.target);
         }
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll(".stats").forEach((el) => cio.observe(el));
 
-        themeToggle.addEventListener('click', () => {
-            const isDark = document.body.dataset.theme === 'dark';
-            document.body.dataset.theme = isDark ? 'light' : 'dark';
-            themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-        });
+    const glow = document.getElementById("glow");
+    window.addEventListener("pointermove", (e) => {
+      glow.style.left = e.clientX + "px";
+      glow.style.top = e.clientY + "px";
+    });
 
-        // Dynamic Name Font
-        function setRandomFont() {
-            const nameElement = document.getElementById('dynamicName');
-            const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
-            nameElement.style.fontFamily = randomFont;
-        }
+    document.querySelectorAll(".tilt").forEach((card) => {
+      card.addEventListener("pointermove", (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`;
+      });
+      card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+    });
 
-        // Typewriter Effect
-        let titleIndex = 0;
-        let charIndex = 0;
-        let currentTitle = '';
-        let isDeleting = false;
+    const ham = document.getElementById("hamburger");
+    const links = document.getElementById("navLinks");
+    ham.addEventListener("click", () => {
+      const open = links.classList.toggle("open");
+      ham.setAttribute("aria-expanded", open);
+    });
+    links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => links.classList.remove("open")));
 
-        function typeWriter() {
-            const typingElement = document.getElementById('typingText');
-
-            if (!isDeleting && charIndex <= titles[titleIndex].length) {
-                currentTitle = titles[titleIndex].substring(0, charIndex);
-                charIndex++;
-                typingElement.textContent = currentTitle;
-                setTimeout(typeWriter, 100);
-            } else if (isDeleting && charIndex >= 0) {
-                currentTitle = titles[titleIndex].substring(0, charIndex);
-                charIndex--;
-                typingElement.textContent = currentTitle;
-                setTimeout(typeWriter, 50);
-            } else {
-                isDeleting = !isDeleting;
-                if (!isDeleting) {
-                    titleIndex = (titleIndex + 1) % titles.length;
-                }
-                setTimeout(typeWriter, 1500);
-            }
-        }
-
-        // Code Animation for Hero Section
-        function animateCode() {
-            const codeContent = document.getElementById('codeContent');
-            const codeLines = [
-                '<div class="code-line code-comment">// Building scalable systems since 2019</div>',
-                '<div class="code-line code-function">class</div>',
-                '<div class="code-line"><span class="code-function">async</span> <span class="code-function">deployProject</span>() {</div>',
-                '<div class="code-line">  <span class="code-var">const</span> architecture = <span class="code-string">"microservices"</span>;</div>',
-                '<div class="code-line">  <span class="code-var">const</span> scale = <span class="code-string">"millions"</span>;</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">await</span> buildBackend();</div>',
-                '<div class="code-line">  <span class="code-function">await</span> optimizePerformance();</div>',
-                '<div class="code-line">  <span class="code-function">await</span> deployCloud();</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line"> </div>',
-                '<div class="code-line code-comment">// Ready for production 🚀</div>'
-            ];
-
-            codeLines.forEach((line, index) => {
-                setTimeout(() => {
-                    const div = document.createElement('div');
-                    div.innerHTML = line;
-                    codeContent.appendChild(div);
-                }, index * 500);
-            });
-        }
-
-        // Animation for Aquera Labs
-        function animateAquera() {
-            const aqueraCode = document.getElementById('aqueraCode');
-            const codeLines = [
-                '<div class="code-line code-comment">// Employee Onboarding Automation</div>',
-                '<div class="code-line"><span class="code-function">function</span> <span class="code-function">automateOnboarding</span>() {</div>',
-                '<div class="code-line">  <span class="code-var">const</span> systems = [<span class="code-string">"HR"</span>, <span class="code-string">"Payroll"</span>, <span class="code-string">"IT"</span>];</div>',
-                '<div class="code-line">  <span class="code-keyword">for</span> (<span class="code-var">let</span> system of systems) {</div>',
-                '<div class="code-line">    <span class="code-function">integrate</span>(system);</div>',
-                '<div class="code-line">    <span class="code-function">autoProvision</span>(system);</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  <span class="code-keyword">return</span> <span class="code-string">"Onboarding Complete"</span>;</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// 90% efficiency gain achieved ✅</div>'
-            ];
-
-            codeLines.forEach((line, index) => {
-                setTimeout(() => {
-                    const div = document.createElement('div');
-                    div.innerHTML = line;
-                    aqueraCode.appendChild(div);
-                }, index * 400);
-            });
-        }
-
-        // Animation for Sarvm.ai
-        function animateSarvm() {
-            const sarvmCode = document.getElementById('sarvmCode');
-            const codeLines = [
-                '<div class="code-line code-comment">// E-commerce Platform - Blinkit/Zepto Style</div>',
-                '<div class="code-line"><span class="code-function">class</span> <span class="code-function">QuickCommerce</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.deliveryTime = <span class="code-number">10</span>; <span class="code-comment">// minutes</span></div>',
-                '<div class="code-line">    <span class="code-var">this</span>.inventory = <span class="code-string">"real-time"</span>;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">processOrder</span>() {</div>',
-                '<div class="code-line">    <span class="code-function">updateInventory</span>();</div>',
-                '<div class="code-line">    <span class="code-function">assignDelivery</span>();</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-string">"Order Delivered in 10 mins"</span>;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>'
-            ];
-
-            codeLines.forEach((line, index) => {
-                setTimeout(() => {
-                    const div = document.createElement('div');
-                    div.innerHTML = line;
-                    sarvmCode.appendChild(div);
-                }, index * 400);
-            });
-        }
-
-        // Animation for Tilli Software
-        function animateTilli() {
-            const tilliCode = document.getElementById('tilliCode');
-            const codeLines = [
-                '<div class="code-line code-comment">// Payment Gateway Integration</div>',
-                '<div class="code-line"><span class="code-function">async</span> <span class="code-function">processPayment</span>(amount, bank) {</div>',
-                '<div class="code-line">  <span class="code-var">const</span> encryptedData = <span class="code-function">encrypt</span>(amount);</div>',
-                '<div class="code-line">  <span class="code-var">const</span> response = <span class="code-keyword">await</span> <span class="code-function">callBankAPI</span>(bank, encryptedData);</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-keyword">if</span> (response.status === <span class="code-string">"success"</span>) {</div>',
-                '<div class="code-line">    <span class="code-function">updateTransaction</span>(response.transactionId);</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-string">"Payment Successful"</span>;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// Integrated with 15+ banking partners</div>'
-            ];
-
-            codeLines.forEach((line, index) => {
-                setTimeout(() => {
-                    const div = document.createElement('div');
-                    div.innerHTML = line;
-                    tilliCode.appendChild(div);
-                }, index * 400);
-            });
-        }
-
-        // Scroll Animations
-        function checkScroll() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('visible');
-
-                    // Trigger animations when elements come into view
-                    const workflowContent = element.querySelector('.workflow-content');
-                    if (workflowContent) {
-                        const company = workflowContent.querySelector('.company').textContent;
-                        if (company === 'Aquera Labs' && document.getElementById('aqueraCode').children.length === 0) {
-                            animateAquera();
-                        } else if (company === 'Sarvm.ai' && document.getElementById('sarvmCode').children.length === 0) {
-                            animateSarvm();
-                        } else if (company === 'Tilli Software' && document.getElementById('tilliCode').children.length === 0) {
-                            animateTilli();
-                        }
-                    }
-                }
-            });
-        }
-
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            setRandomFont();
-            typeWriter();
-            animateCode();
-            checkScroll();
-            window.addEventListener('scroll', checkScroll);
-        });
-
-        // Add Google Fonts
-        const link = document.createElement('link');
-        link.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600;700&family=Poppins:wght@600;700&family=Raleway:wght@600;700&family=Space+Grotesk:wght@600;700&family=Syne:wght@700&family=Clash+Display:wght@600;700&display=swap';
-        link.rel = 'stylesheet';
-        document.head.appendChild(link);
-
-        // Add interactive hover effects
-        const cards = document.querySelectorAll('.card');
-
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', function () {
-                // Slightly lift other cards when hovering
-                cards.forEach(otherCard => {
-                    if (otherCard !== this) {
-                        otherCard.style.transform += ' translateY(-5px)';
-                    }
-                });
-            });
-
-            card.addEventListener('mouseleave', function () {
-                // Reset other cards
-                cards.forEach(otherCard => {
-                    if (otherCard !== this) {
-                        otherCard.style.transform = otherCard.style.transform.replace(' translateY(-5px)', '');
-                    }
-                });
-            });
-        });
-
-        // Add click animation
-        cards.forEach(card => {
-            card.addEventListener('click', function () {
-                this.style.transform += ' scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = this.style.transform.replace(' scale(0.95)', '');
-                }, 150);
-            });
-        });
-
-        // Enhanced Continuous Code Animation
-        /* function createContinuousAnimation(elementId, codeSets, typingSpeed = 400, pauseBetweenSets = 2000) {
-            const codeContent = document.getElementById(elementId);
-            let currentSetIndex = 0;
-            let animationActive = true;
-            let timeoutId = null;
-
-            function clearAnimation() {
-                if (timeoutId) {
-                    clearTimeout(timeoutId);
-                    timeoutId = null;
-                }
-                codeContent.innerHTML = '';
-            }
-
-            function typeLine(lines, index = 0) {
-                if (!animationActive || index >= lines.length) {
-                    // Finished typing, wait and then delete
-                    timeoutId = setTimeout(() => deleteAllLines(), pauseBetweenSets);
-                    return;
-                }
-
-                const div = document.createElement('div');
-                div.innerHTML = lines[index];
-                div.style.opacity = '0';
-                div.style.animation = 'typeLine 0.5s forwards';
-                codeContent.appendChild(div);
-
-                timeoutId = setTimeout(() => typeLine(lines, index + 1), typingSpeed);
-            }
-
-            function deleteAllLines() {
-                if (!animationActive || codeContent.children.length === 0) {
-                    // Finished deleting, move to next set
-                    currentSetIndex = (currentSetIndex + 1) % codeSets.length;
-                    timeoutId = setTimeout(() => startTyping(), 500);
-                    return;
-                }
-
-                const lastChild = codeContent.lastChild;
-                if (lastChild) {
-                    lastChild.style.animation = 'fadeOut 0.3s forwards';
-                    timeoutId = setTimeout(() => {
-                        if (lastChild.parentNode) {
-                            lastChild.parentNode.removeChild(lastChild);
-                        }
-                        deleteAllLines();
-                    }, 200);
-                } else {
-                    deleteAllLines();
-                }
-            }
-
-            function startTyping() {
-                if (!animationActive) return;
-                const currentSet = codeSets[currentSetIndex];
-                typeLine(currentSet);
-            }
-
-            // Start the animation
-            startTyping();
-
-            // Return function to stop animation
-            return () => {
-                animationActive = false;
-                clearAnimation();
-            };
-        } */
-
-        // Enhanced Continuous Code Animation with Auto-Scroll
-        function createContinuousAnimation(elementId, codeSets, typingSpeed = 400, pauseBetweenSets = 2000) {
-            const codeContent = document.getElementById(elementId);
-            let currentSetIndex = 0;
-            let animationActive = true;
-            let timeoutId = null;
-
-            function scrollToBottom() {
-                if (codeContent) {
-                    codeContent.scrollTop = codeContent.scrollHeight;
-                }
-            }
-
-            function scrollToTop() {
-                if (codeContent) {
-                    codeContent.scrollTop = 0;
-                }
-            }
-
-            function smoothScrollToBottom() {
-                if (!codeContent) return;
-
-                const targetScroll = codeContent.scrollHeight;
-                const currentScroll = codeContent.scrollTop;
-                const distance = targetScroll - currentScroll;
-
-                if (distance > 0) {
-                    const step = Math.max(distance / 10, 10);
-                    codeContent.scrollTop += step;
-
-                    if (codeContent.scrollTop < targetScroll - 5) {
-                        requestAnimationFrame(smoothScrollToBottom);
-                    }
-                }
-            }
-
-            function clearAnimation() {
-                if (timeoutId) {
-                    clearTimeout(timeoutId);
-                    timeoutId = null;
-                }
-                codeContent.innerHTML = '';
-            }
-
-            function typeLine(lines, index = 0) {
-                if (!animationActive || index >= lines.length) {
-                    // Scroll to bottom one final time after typing completes
-                    setTimeout(() => {
-                        scrollToBottom();
-                        // Wait and then delete
-                        timeoutId = setTimeout(() => deleteAllLines(), pauseBetweenSets);
-                    }, 300);
-                    return;
-                }
-
-                const div = document.createElement('div');
-                div.innerHTML = lines[index];
-                div.style.opacity = '0';
-                div.style.animation = 'typeLine 0.5s forwards';
-                codeContent.appendChild(div);
-
-                // Scroll to bottom after adding each line
-                setTimeout(() => {
-                    smoothScrollToBottom();
-                }, 100);
-
-                timeoutId = setTimeout(() => typeLine(lines, index + 1), typingSpeed);
-            }
-
-            function deleteAllLines() {
-                if (!animationActive || codeContent.children.length === 0) {
-                    // Scroll to top after deletion completes
-                    scrollToTop();
-                    // Move to next set
-                    currentSetIndex = (currentSetIndex + 1) % codeSets.length;
-                    timeoutId = setTimeout(() => startTyping(), 500);
-                    return;
-                }
-
-                const lastChild = codeContent.lastChild;
-                if (lastChild) {
-                    lastChild.style.animation = 'fadeOut 0.3s forwards';
-                    timeoutId = setTimeout(() => {
-                        if (lastChild.parentNode) {
-                            lastChild.parentNode.removeChild(lastChild);
-                        }
-
-                        // Scroll to show remaining content
-                        smoothScrollToBottom();
-                        deleteAllLines();
-                    }, 150); // Faster deletion
-                } else {
-                    deleteAllLines();
-                }
-            }
-
-            function startTyping() {
-                if (!animationActive) return;
-                const currentSet = codeSets[currentSetIndex];
-
-                // Ensure we start from top
-                scrollToTop();
-                typeLine(currentSet);
-            }
-
-            // Start the animation
-            startTyping();
-
-            // Return function to stop animation
-            return () => {
-                animationActive = false;
-                clearAnimation();
-            };
-        }
-
-        // Add fadeOut animation to CSS
-        const style = document.createElement('style');
-        style.textContent = `
-    @keyframes fadeOut {
-        from { opacity: 1; transform: translateX(0); }
-        to { opacity: 0; transform: translateX(-20px); }
+    if (new URLSearchParams(location.search).get("sent") === "1") {
+      const b = document.getElementById("formBanner");
+      if (b) b.style.display = "block";
     }
-    @keyframes typeLine {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-`;
-        document.head.appendChild(style);
 
-        // Enhanced code sets with more variety
-        const heroCodeSets = [
-            [
-                '<div class="code-line code-comment">// Building scalable systems since 2019</div>',
-                '<div class="code-line code-function">class</span> <span class="code-function">ProjectDeployer</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.architecture = <span class="code-string">"microservices"</span>;</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.scale = <span class="code-string">"millions"</span>;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">async</span> <span class="code-function">deploy</span>() {</div>',
-                '<div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">buildBackend</span>();</div>',
-                '<div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">optimizePerformance</span>();</div>',
-                '<div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">deployCloud</span>();</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// Ready for production 🚀</div>'
-            ],
-            [
-                '<div class="code-line code-comment">// Full-Stack Development Expertise</div>',
-                '<div class="code-line code-function">const</span> techStack = {</div>',
-                '<div class="code-line">  backend: [</div>',
-                '<div class="code-line">    <span class="code-string">"Node.js"</span>, </div>',
-                '<div class="code-line">    <span class="code-string">"NestJS"</span>, </div>',
-                '<div class="code-line">    <span class="code-string">"Golang"</span>, </div>',
-                '<div class="code-line">    <span class="code-string">"TypeScript"</span></div>',
-                '<div class="code-line">  ],</div>',
-                '<div class="code-line">  frontend: [</div>',
-                '<div class="code-line">    <span class="code-string">"React"</span>, </div>',
-                '<div class="code-line">    <span class="code-string">"Next.js"</span>, </div>',
-                '<div class="code-line">    <span class="code-string">"Tailwind"</span></div>',
-                '<div class="code-line">  ]</div>',
-                '<div class="code-line">};</div>',
-                '<div class="code-line code-comment">// 5+ years of experience</div>'
-            ],
-            [
-                '<div class="code-line code-comment">// System Architecture & Design</div>',
-                '<div class="code-line code-function">function</span> <span class="code-function">designSystem</span>(requirements) {</div>',
-                '<div class="code-line">  <span class="code-keyword">const</span> { scalability, reliability } = requirements;</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-keyword">if</span> (scalability === <span class="code-string">"high"</span>) {</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-function">createMicroservices</span>();</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-keyword">return</span> <span class="code-function">createMonolith</span>();</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// Clean architecture principles</div>'
-            ],
-            [
-                '<div class="code-line code-comment">// Backend Development</div>',
-                '<div class="code-line code-function">class</span> <span class="code-function">APIService</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.cache = <span class="code-keyword">new</span> Map();</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.db = <span class="code-function">connectDatabase</span>();</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">async</span> <span class="code-function">getUser</span>(id) {</div>',
-                '<div class="code-line">    <span class="code-keyword">if</span> (<span class="code-var">this</span>.cache.<span class="code-function">has</span>(id)) {</div>',
-                '<div class="code-line">      <span class="code-keyword">return</span> <span class="code-var">this</span>.cache.<span class="code-function">get</span>(id);</div>',
-                '<div class="code-line">    }</div>',
-                '<div class="code-line">    </div>',
-                '<div class="code-line">    <span class="code-keyword">const</span> user = <span class="code-keyword">await</span> <span class="code-var">this</span>.db.<span class="code-function">findUser</span>(id);</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.cache.<span class="code-function">set</span>(id, user);</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> user;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>'
-            ]
-        ];
-
-        const aqueraCodeSets = [
-            [
-                '<div class="code-line code-comment">// Employee Onboarding Automation</div>',
-                '<div class="code-line code-function">class</span> <span class="code-function">OnboardingSystem</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.integrations = [];</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">async</span> <span class="code-function">onboardEmployee</span>(employee) {</div>',
-                '<div class="code-line">    <span class="code-keyword">for</span> (<span class="code-keyword">let</span> integration <span class="code-keyword">of</span> <span class="code-var">this</span>.integrations) {</div>',
-                '<div class="code-line">      <span class="code-keyword">await</span> integration.<span class="code-function">provision</span>(employee);</div>',
-                '<div class="code-line">    }</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-string">"Onboarding Complete"</span>;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// 90% efficiency gain ✅</div>'
-            ],
-            [
-                '<div class="code-line code-comment">// Multi-Platform Integration</div>',
-                '<div class="code-line code-function">const</span> platforms = [</div>',
-                '<div class="code-line">  <span class="code-string">"HR System"</span>,</div>',
-                '<div class="code-line">  <span class="code-string">"Payroll"</span>,</div>',
-                '<div class="code-line">  <span class="code-string">"IT Services"</span>,</div>',
-                '<div class="code-line">  <span class="code-string">"Email"</span>,</div>',
-                '<div class="code-line">  <span class="code-string">"Access Control"</span></div>',
-                '<div class="code-line">];</div>',
-                '<div class="code-line"> </div>',
-                '<div class="code-line code-function">async</span> <span class="code-function">syncAllPlatforms</span>() {</div>',
-                '<div class="code-line">  <span class="code-keyword">await</span> Promise.<span class="code-function">all</span>(</div>',
-                '<div class="code-line">    platforms.<span class="code-function">map</span>(platform => </div>',
-                '<div class="code-line">      <span class="code-function">syncPlatform</span>(platform)</div>',
-                '<div class="code-line">    )</div>',
-                '<div class="code-line">  );</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// 10+ platforms connected</div>'
-            ]
-        ];
-
-        const sarvmCodeSets = [
-            [
-                '<div class="code-line code-comment">// Quick Commerce Platform</div>',
-                '<div class="code-line code-function">class</span> <span class="code-function">QuickCommerce</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.deliveryTime = <span class="code-number">10</span>;</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.inventory = <span class="code-keyword">new</span> Map();</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">async</span> <span class="code-function">processOrder</span>(order) {</div>',
-                '<div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">validateInventory</span>(order);</div>',
-                '<div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">assignDelivery</span>();</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-function">trackOrder</span>(order);</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>'
-            ],
-            [
-                '<div class="code-line code-comment">// Real-time Inventory Management</div>',
-                '<div class="code-line code-function">class</span> <span class="code-function">InventoryManager</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.stock = <span class="code-keyword">new</span> Map();</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.listeners = [];</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">updateStock</span>(productId, quantity) {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.stock.<span class="code-function">set</span>(productId, quantity);</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.<span class="code-function">notifyListeners</span>(productId);</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// Blinkit/Zepto style platform</div>'
-            ]
-        ];
-
-        const tilliCodeSets = [
-            [
-                '<div class="code-line code-comment">// Payment Gateway Integration</div>',
-                '<div class="code-line code-function">class</span> <span class="code-function">PaymentProcessor</span> {</div>',
-                '<div class="code-line">  <span class="code-function">constructor</span>() {</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.banks = <span class="code-keyword">new</span> Map();</div>',
-                '<div class="code-line">    <span class="code-var">this</span>.encryption = <span class="code-string">"AES-256"</span>;</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">  </div>',
-                '<div class="code-line">  <span class="code-function">async</span> <span class="code-function">process</span>(payment) {</div>',
-                '<div class="code-line">    <span class="code-keyword">const</span> encrypted = <span class="code-function">encrypt</span>(payment);</div>',
-                '<div class="code-line">    <span class="code-keyword">const</span> result = <span class="code-keyword">await</span> <span class="code-function">callBank</span>(encrypted);</div>',
-                '<div class="code-line">    <span class="code-keyword">return</span> <span class="code-function">handleResponse</span>(result);</div>',
-                '<div class="code-line">  }</div>',
-                '<div class="code-line">}</div>'
-            ],
-            [
-                '<div class="code-line code-comment">// Secure Transaction System</div>',
-                '<div class="code-line code-function">const</span> supportedBanks = [</div>',
-                '<div class="code-line">  <span class="code-string">"HDFC"</span>, <span class="code-string">"ICICI"</span>, <span class="code-string">"SBI"</span>,</div>',
-                '<div class="code-line">  <span class="code-string">"Axis"</span>, <span class="code-string">"Kotak"</span>, <span class="code-string">"Yes Bank"</span>,</div>',
-                '<div class="code-line">  <span class="code-string">"PNB"</span>, <span class="code-string">"BoB"</span>, <span class="code-string">"Canara"</span></div>',
-                '<div class="code-line">];</div>',
-                '<div class="code-line"> </div>',
-                '<div class="code-line code-function">function</span> <span class="code-function">validateBank</span>(bankCode) {</div>',
-                '<div class="code-line">  <span class="code-keyword">return</span> supportedBanks.<span class="code-function">includes</span>(bankCode);</div>',
-                '<div class="code-line">}</div>',
-                '<div class="code-line code-comment">// 15+ banking partners integrated</div>'
-            ]
-        ];
-
-        // Store animation controllers
-        const animationControllers = new Map();
-
-        // Initialize continuous animations
-        function initContinuousAnimations() {
-            // Clear any existing animations
-            animationControllers.forEach(controller => controller());
-            animationControllers.clear();
-
-            // Start hero animation immediately
-            animationControllers.set('hero', createContinuousAnimation('codeContent', heroCodeSets, 350, 1500));
+    const canvas = document.getElementById("mesh");
+    const ctx = canvas.getContext("2d");
+    let w, h, pts;
+    const resize = () => {
+      w = canvas.width = innerWidth;
+      h = canvas.height = innerHeight;
+      pts = Array.from({ length: Math.min(70, Math.floor(w / 24)) }, () => ({
+        x: Math.random() * w, y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35
+      }));
+    };
+    resize();
+    addEventListener("resize", resize);
+    const draw = () => {
+      ctx.clearRect(0, 0, w, h);
+      for (const p of pts) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > w) p.vx *= -1;
+        if (p.y < 0 || p.y > h) p.vy *= -1;
+        ctx.fillStyle = "rgba(0,173,216,0.55)";
+        ctx.beginPath(); ctx.arc(p.x, p.y, 1.4, 0, Math.PI * 2); ctx.fill();
+      }
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+          const d = Math.hypot(dx, dy);
+          if (d < 140) {
+            ctx.strokeStyle = `rgba(232,176,112,${(1 - d / 140) * 0.12})`;
+            ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); ctx.stroke();
+          }
         }
+      }
+      requestAnimationFrame(draw);
+    };
+    draw();
+  </script>
 
-        // Enhanced scroll handler with error recovery
-        function checkScroll() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('visible');
-
-                    // Initialize animations for visible elements
-                    const workflowContent = element.querySelector('.workflow-content');
-                    if (workflowContent) {
-                        const company = workflowContent.querySelector('.company').textContent;
-                        let codeElementId;
-
-                        switch (company) {
-                            case 'Aquera Labs':
-                                codeElementId = 'aqueraCode';
-                                break;
-                            case 'Sarvm.ai':
-                                codeElementId = 'sarvmCode';
-                                break;
-                            case 'Tilli Software':
-                                codeElementId = 'tilliCode';
-                                break;
-                            default:
-                                return;
-                        }
-
-                        // Start animation if not already running
-                        if (!animationControllers.has(codeElementId)) {
-                            const codeSets = getCodeSetsForCompany(company);
-                            const controller = createContinuousAnimation(codeElementId, codeSets, 450, 2000);
-                            animationControllers.set(codeElementId, controller);
-                        }
-                    }
-                }
-            });
-        }
-
-        function getCodeSetsForCompany(company) {
-            switch (company) {
-                case 'Aquera Labs': return aqueraCodeSets;
-                case 'Sarvm.ai': return sarvmCodeSets;
-                case 'Tilli Software': return tilliCodeSets;
-                default: return [];
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://arvind-sahu.github.io/#website",
+        "url": "https://arvind-sahu.github.io/",
+        "name": "Arvind Kumar Sahu — Senior Software Engineer",
+        "alternateName": ["gopherarvind", "arvind-sahu", "Arvind Sahu SSE", "Arvind Kumar Sahu Node.js"],
+        "inLanguage": "en",
+        "description": "Official website of Arvind Kumar Sahu, Senior Software Engineer (SSE), Node.js developer, Golang developer, NestJS developer, and full-stack developer with AWS in Bengaluru.",
+        "publisher": { "@id": "https://arvind-sahu.github.io/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://arvind-sahu.github.io/#profile",
+        "url": "https://arvind-sahu.github.io/",
+        "name": "Arvind Kumar Sahu | Senior Software Engineer (SSE)",
+        "isPartOf": { "@id": "https://arvind-sahu.github.io/#website" },
+        "about": { "@id": "https://arvind-sahu.github.io/#person" },
+        "mainEntity": { "@id": "https://arvind-sahu.github.io/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://arvind-sahu.github.io/#person",
+        "name": "Arvind Kumar Sahu",
+        "givenName": "Arvind",
+        "additionalName": "Kumar",
+        "familyName": "Sahu",
+        "alternateName": ["Arvind Sahu", "Arvind Kumar Sahu IIIT Nagpur", "gopherarvind", "arvind-sahu"],
+        "jobTitle": "Senior Software Engineer",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "https://orcid.org/0009-0006-6710-9360"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "GitHub",
+            "value": "https://github.com/arvind-sahu"
+          }
+        ],
+        "hasOccupation": [
+          { "@type": "Occupation", "name": "Senior Software Engineer" },
+          { "@type": "Occupation", "name": "Senior Backend Developer" },
+          { "@type": "Occupation", "name": "Node.js Developer" },
+          { "@type": "Occupation", "name": "Golang Developer" },
+          { "@type": "Occupation", "name": "NestJS Developer" },
+          { "@type": "Occupation", "name": "Full Stack Developer" }
+        ],
+        "description": "Senior Software Engineer (SSE) with 6+ years of experience. Node.js, NestJS, Golang, and AWS specialist. Backend-focused full-stack and end-to-end developer in Bengaluru.",
+        "url": "https://arvind-sahu.github.io/",
+        "image": "https://arvind-sahu.github.io/profile.png",
+        "email": "mailto:arvindkumar93258@gmail.com",
+        "telephone": "+919325860577",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/arvind-sahu",
+          "https://www.linkedin.com/in/gopherarvind/",
+          "https://orcid.org/0009-0006-6710-9360",
+          "https://leetcode.com/u/arvind_iiitn"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Indian Institute of Information Technology Nagpur"
+        },
+        "worksFor": { "@type": "Organization", "name": "Stealth Startup" },
+        "knowsAbout": ["Node.js", "NestJS", "Golang", "Go", "AWS", "TypeScript", "Microservices", "PostgreSQL", "Redis", "Docker", "Kubernetes", "Senior Software Engineer", "Full Stack Development"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Arvind Kumar Sahu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Arvind Kumar Sahu is a Senior Software Engineer in Bengaluru, India, and an IIIT Nagpur Computer Science alumnus (GATE 2022 AIR 1800). His official website is arvind-sahu.github.io, GitHub is github.com/arvind-sahu, and LinkedIn is linkedin.com/in/gopherarvind."
             }
-        }
-
-        // Enhanced initialization with error handling
-        document.addEventListener('DOMContentLoaded', () => {
-            setRandomFont();
-            typeWriter();
-
-            // Start animations with a small delay to ensure DOM is ready
-            setTimeout(() => {
-                initContinuousAnimations();
-            }, 1000);
-
-            checkScroll();
-            window.addEventListener('scroll', checkScroll);
-        });
-
-        // Restart animations if they stop (safety net)
-        setInterval(() => {
-            // Check if hero animation is still running
-            const heroContent = document.getElementById('codeContent');
-            if (heroContent && heroContent.children.length === 0 && !animationControllers.get('hero')) {
-                console.log('Restarting hero animation...');
-                animationControllers.set('hero', createContinuousAnimation('codeContent', heroCodeSets, 350, 1500));
+          },
+          {
+            "@type": "Question",
+            "name": "Is Arvind Kumar Sahu a Senior Software Engineer or SSE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Arvind Kumar Sahu is a Senior Software Engineer (SSE) with 6+ years of experience in Node.js, NestJS, Golang, and AWS, based in Bengaluru, India."
             }
-        }, 10000); // Check every 10 seconds
-
-        // WhatsApp icon click handler
-        //document.querySelector('.whatsapp-icon').addEventListener('click', function() {
-        // Add your WhatsApp link or functionality here
-        //console.log('WhatsApp clicked');
-        //});
-    </script>
+          },
+          {
+            "@type": "Question",
+            "name": "Is Arvind Kumar Sahu a Node.js developer, Go developer, or NestJS developer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. He is a Node.js developer, Golang (Go) developer, and NestJS developer who has shipped production APIs, workers, and enterprise integrations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Arvind Kumar Sahu a senior backend developer and full stack developer with AWS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. He is a senior backend developer and a full-stack developer with AWS — also a backend developer with AWS and an end-to-end developer covering APIs, data, cloud, and UI when needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact Arvind Kumar Sahu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Email arvindkumar93258@gmail.com, visit linkedin.com/in/gopherarvind, github.com/arvind-sahu, or arvind-sahu.github.io."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://arvind-sahu.github.io/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
-
 </html>

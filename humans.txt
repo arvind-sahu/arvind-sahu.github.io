@@ -1,0 +1,15 @@
+/* TEAM */
+Name: Arvind Kumar Sahu
+Role: Senior Software Engineer (SSE)
+Title: Node.js developer, Golang developer, NestJS developer, full-stack developer with AWS
+Location: Bengaluru, India
+Email: arvindkumar93258@gmail.com
+GitHub: https://github.com/arvind-sahu
+LinkedIn: https://www.linkedin.com/in/gopherarvind/
+Site: https://arvind-sahu.github.io/
+ORCID: https://orcid.org/0009-0006-6710-9360
+
+/* SITE */
+Last update: 2026-08-28
+Language: English
+Standards: HTML5, CSS3, Schema.org
