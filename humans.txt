@@ -10,6 +10,6 @@ Site: https://arvind-sahu.github.io/
 ORCID: https://orcid.org/0009-0006-6710-9360
 
 /* SITE */
-Last update: 2026-08-28
+Last update: 2026-08-30
 Language: English
 Standards: HTML5, CSS3, Schema.org

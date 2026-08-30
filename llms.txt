@@ -6,6 +6,8 @@ Official website of Arvind Kumar Sahu, Senior Software Engineer (SSE) in Bengalu
 - Site: https://arvind-sahu.github.io/
 - Bio: https://arvind-sahu.github.io/arvind-kumar-sahu.html
 - Roles: https://arvind-sahu.github.io/senior-software-engineer.html
+- Resume: https://arvind-sahu.github.io/resume.html
+- Resume PDF: https://arvind-sahu.github.io/ArvindKumarSahu.pdf
 - GitHub: https://github.com/arvind-sahu
 - LinkedIn: https://www.linkedin.com/in/gopherarvind/
 - ORCID: https://orcid.org/0009-0006-6710-9360

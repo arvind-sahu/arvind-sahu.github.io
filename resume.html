@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Arvind Kumar Sahu | Senior Software Engineer</title>
+  <meta name="description" content="Resume of Arvind Kumar Sahu, Senior Software Engineer. IIIT Nagpur, GATE 2022 AIR 1800. Go, Node.js, NestJS, AWS. Download the PDF or view this HTML version." />
+  <meta name="author" content="Arvind Kumar Sahu" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://arvind-sahu.github.io/resume.html" />
+  <link rel="alternate" type="application/pdf" href="https://arvind-sahu.github.io/ArvindKumarSahu.pdf" title="Arvind Kumar Sahu resume PDF" />
+  <link rel="me" href="https://github.com/arvind-sahu" />
+  <link rel="me" href="https://www.linkedin.com/in/gopherarvind/" />
+  <meta property="og:title" content="Resume — Arvind Kumar Sahu" />
+  <meta property="og:description" content="Senior Software Engineer resume. IIIT Nagpur · GATE 2022 AIR 1800 · Go, Node.js, NestJS, AWS." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://arvind-sahu.github.io/resume.html" />
+  <meta property="og:image" content="https://arvind-sahu.github.io/profile.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" href="https://arvind-sahu.github.io/profile.png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    :root {
+      --ink: #111;
+      --purple: #624b79;
+      --page: #fff;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #e8e6e1;
+      color: var(--ink);
+      font-family: "Computer Modern Serif", "CMU Serif", "Latin Modern Roman", "Times New Roman", Times, serif;
+      font-size: 10.9pt;
+      line-height: 1.28;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .toolbar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap;
+      padding: 0.7rem 1rem;
+      background: #06080c;
+      font-family: Outfit, system-ui, sans-serif;
+      font-size: 0.86rem;
+    }
+    .toolbar a {
+      color: #f3eee6; text-decoration: none;
+      border: 1px solid rgba(232,176,112,0.28);
+      border-radius: 999px; padding: 0.4rem 0.9rem;
+    }
+    .toolbar a.primary { background: #00add8; border-color: #00add8; color: #061018; font-weight: 650; }
+    .toolbar a:hover { border-color: #00add8; }
+
+    .sheet {
+      width: 8.5in;
+      max-width: 100%;
+      margin: 1.2rem auto 2.4rem;
+      background: var(--page);
+      padding: 0.72in 0.74in 0.7in;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    }
+
+    header.top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.2rem;
+      margin-bottom: 0.85rem;
+    }
+    .identity { flex: 1; min-width: 0; }
+    h1.name {
+      font-size: 20.7pt;
+      font-weight: 700;
+      margin: 0 0 0.12rem;
+      letter-spacing: 0;
+      line-height: 1.15;
+    }
+    .sub { margin: 0; }
+    .contact { margin: 0.28rem 0 0; }
+    .contact p { margin: 0.02rem 0; }
+    .contact i { width: 1.05em; color: #222; margin-right: 0.28em; }
+    .contact a { color: var(--purple); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    .brand {
+      width: 1.55in;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+    .brand img {
+      width: 1.15in;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.15rem;
+    }
+    .brand span {
+      display: block;
+      font-size: 10.2pt;
+      color: #3d3a8a;
+      font-weight: 700;
+    }
+
+    h2.sec {
+      font-size: 10.9pt;
+      font-weight: 400;
+      color: var(--purple);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0.72rem 0 0;
+    }
+    h2.sec + hr, .rule {
+      border: 0;
+      border-top: 0.7pt solid #111;
+      margin: 0.12rem 0 0.38rem;
+    }
+
+    .job { margin: 0 0 0.42rem; }
+    .job-top, .edu-top, .edu-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .job-top strong, .edu-top strong { font-weight: 700; }
+    .when { font-style: italic; white-space: nowrap; }
+
+    ul.bullets {
+      margin: 0.12rem 0 0;
+      padding-left: 1.15em;
+    }
+    ul.bullets li { margin: 0.08rem 0; }
+    ul.bullets li::marker { content: "• "; }
+
+    .skills p { margin: 0.18rem 0; }
+    .proj { margin: 0.18rem 0; }
+
+    .page-break { break-after: page; page-break-after: always; height: 0; }
+
+    @media (max-width: 900px) {
+      .sheet { width: auto; margin: 0; padding: 1.2rem 1.1rem 2rem; box-shadow: none; }
+      header.top { flex-wrap: wrap; }
+      .brand { width: 100%; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .sheet {
+        width: auto; margin: 0; padding: 0;
+        box-shadow: none;
+      }
+      @page { size: letter; margin: 0.65in 0.7in; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">← Portfolio</a>
+    <a class="primary" href="ArvindKumarSahu.pdf">Download PDF</a>
+    <a href="ArvindKumarSahu.pdf">Direct PDF link</a>
+    <a href="ArvindKumarSahu_Cover_Letter.pdf">Cover letter</a>
+    <a href="#" onclick="window.print(); return false;">Print</a>
+  </div>
+
+  <article class="sheet" itemscope itemtype="https://schema.org/Person">
+    <header class="top">
+      <div class="identity">
+        <h1 class="name" itemprop="name">Arvind Kumar Sahu</h1>
+        <p class="sub">B.Tech in Computer Science Engineering</p>
+        <p class="sub">Gate 2022(AIR-1800)</p>
+        <div class="contact">
+          <p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:arvindkumar93258@gmail.com" itemprop="email">arvindkumar93258@gmail.com</a>
+          </p>
+          <p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:+919325860577" itemprop="telephone">+91-9325860577</a>
+          </p>
+          <p>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/arvindkumar93258/">https://www.linkedin.com/in/arvindkumar93258/</a>
+          </p>
+          <p>
+            <a href="https://leetcode.com/u/arvind_iiitn">https://leetcode.com/u/arvind_iiitn</a>
+          </p>
+        </div>
+      </div>
+      <div class="brand">
+        <img src="iiit-nagpur-logo.jpg" width="110" height="99" alt="IIIT Nagpur" />
+        <span>IIIT Nagpur</span>
+      </div>
+    </header>
+
+    <h2 class="sec">Work Experience</h2>
+    <hr class="rule" />
+
+    <section class="job">
+      <div class="job-top">
+        <strong>Senior Software Engineer at Incommon</strong>
+        <span class="when">Dec 2025 - 30 April 2026</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed backend services and APIs for Autodesk Assistant, an AI-powered conversational support system for Autodesk products (AutoCAD, Revit, Fusion 360, etc.).</li>
+        <li>Implemented core backend logic for intent handling, context management, and real-time integration with Autodesk APIs.</li>
+        <li><strong>Tech Stack:</strong> Go, Gin, net/http, Goroutines &amp; Channels, MySQL, DynamoDB, Redis, AWS (Bedrock, Lambda, S3, CloudWatch), Docker, CI/CD, Elasticsearch, REST APIs, Microservices.</li>
+      </ul>
+    </section>
+
+    <section class="job">
+      <div class="job-top">
+        <strong>Member of Technical Staff - 2 at Aquera Labs</strong>
+        <span class="when">Aug 2024 - Dec 2025</span>
+      </div>
+      <ul class="bullets">
+        <li><strong>Tech Stack -</strong> Nodejs, Nestjs, React/Nextjs, PostgreSQL, DynamoDB, Redis, AWS (Lambda, S3, CloudWatch), Docker, CI/CD, Elasticsearch, REST APIs, Microservices</li>
+        <li>Designed, developed, and optimized 20+ enterprise SaaS connectors and integration pipelines for platforms including Workday, ADP, Paylocity, Dayforce, and Zoho.</li>
+        <li>Improved HR-to-IT onboarding automation efficiency by 70% through scalable workflow orchestration, asynchronous processing, and event-driven backend services.</li>
+        <li>Enhanced platform reliability, throughput, and response times by implementing Redis caching, distributed task queues, DynamoDB optimizations, and fault-tolerant microservice patterns.</li>
+      </ul>
+    </section>
+
+    <section class="job">
+      <div class="job-top">
+        <strong>Associate Software Engineer-2 at Tilli Software</strong>
+        <span class="when">Jan 2023 - Aug 2024</span>
+      </div>
+      <ul class="bullets">
+        <li>Engineered a high-scale Loan &amp; Credit Card Platform supporting KYC verification, loan disbursement, credit card offers, transaction processing, statement generation, repayment workflows, and end-to-end lifecycle management.</li>
+        <li>Built <strong>Monay</strong>, a global B2B2C payment gateway platform featuring secure payment processing, RBAC, merchant/admin management workflows, and real-time analytics dashboards.</li>
+        <li>Developed <strong>Beacon</strong>, a B2B invoice processing and payment platform integrated with ERP systems and BBPS for automated billing and reconciliation workflows.</li>
+        <li>Optimized NodeJs/NestJS microservices through MySQL query tuning, schema normalization, Redis caching, BullMQ-based async processing reducing API latency by 40% and significantly improving statement generation performance under high transaction loads.</li>
+        <li><strong>Tech Stack -</strong> Nodejs, Reactjs/Nextjs, Express.js, Golang, Gin, Goroutines &amp; channels API-Gateway, Node.js, React.js/Next.js, TypeScript, Swagger, MySQL, Redis, AWS, S3, Lambda, SES, SQS, Docker, Microservices, REST APIs &amp; gRPC.</li>
+      </ul>
+    </section>
+
+    <section class="job">
+      <div class="job-top">
+        <strong>Software Developer at EWNS</strong>
+        <span class="when">May 2021 - Jan 2023</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed <strong>Sarvm</strong>, a hyper-local e-commerce platform supporting grocery and food delivery operations across multiple cities.</li>
+        <li>Built retailer, delivery partner, and customer-facing applications using Node.js, JavaScript/TypeScript, PostgreSQL, MongoDB, and AWS S3, enabling real-time order placement, tracking and workflows.</li>
+        <li>Enhanced monitoring and infrastructure visibility using AWS CloudWatch, S3, EC2, Kubernetes, and microservices-based deployment architecture.</li>
+      </ul>
+    </section>
+
+    <h2 class="sec">Education</h2>
+    <hr class="rule" />
+
+    <section class="job">
+      <div class="edu-top">
+        <strong>IIIT Nagpur</strong>
+        <span class="when">2017 - 2021</span>
+      </div>
+      <div class="edu-sub">
+        <span>B.Tech in Computer Science and Engineering</span>
+        <span class="when">CGPA: 7.88</span>
+      </div>
+    </section>
+    <section class="job">
+      <div class="edu-top">
+        <strong>High School</strong>
+        <span class="when">2012 - 2014</span>
+      </div>
+      <div class="edu-sub">
+        <span>R M L High School, Loma (State Board BSEB)</span>
+        <span class="when">Percentage: (80%)</span>
+      </div>
+    </section>
+    <section class="job">
+      <div class="edu-top">
+        <strong>Intermediate</strong>
+        <span class="when">2014 - 2016</span>
+      </div>
+      <div class="edu-sub">
+        <span>RSSL College Aunsi, Bisfi (State Board BSEB)</span>
+        <span class="when">Percentage: (77%)</span>
+      </div>
+    </section>
+
+    <h2 class="sec">Selected Projects</h2>
+    <hr class="rule" />
+    <p class="proj"><strong>Library Management System :</strong> Developed for IIITN to manage books and staff info successfully implemented with testing. Used HTML,CSS,JavaScript,Nodejs,SQL etc and now updating it with React</p>
+    <p class="proj"><strong>Online Music System :</strong> Built this Project plays the music, stores user info and favorite songs. User can search song by title or artist, and can mark as favourite using Nodejs framework.</p>
+
+    <h2 class="sec">Technical Skills</h2>
+    <hr class="rule" />
+    <div class="skills">
+      <p><strong>Programming Languages:</strong> Golang, TypeScript, JavaScript, C/C++, Object-Oriented Programming (OOP)</p>
+      <p><strong>Backend Engineering:</strong> Golang, Gin, net/http, gRPC, GORM, Concurrency (Goroutines, Channels), Node.js, NestJS, Express.js, REST APIs, GraphQL, Microservices, Distributed Systems, Event-Driven Architecture</p>
+      <p><strong>Frontend Development:</strong> React.js, Next.js HTML, CSS, Tailwind-CSS</p>
+      <p><strong>Databases &amp; Caching:</strong> PostgreSQL, MySQL, Redis, MongoDB, DynamoDB</p>
+      <p><strong>Cloud &amp; DevOps:</strong> AWS (Lambda, EC2, S3, API Gateway, SQS, SNS, IAM, CloudFront), GitHub Actions CI/CD, Docker, Kubernetes</p>
+      <p><strong>Tools &amp; Platforms:</strong> Kafka, Swagger/OpenAPI, Postman, Git, Jira, AI-Assisted Development, System Design, Performance Optimization</p>
+      <p><strong>Core Computer Science:</strong> Data Structures &amp; Algorithms, DBMS, Operating Systems, Computer Networks, OOP Design Principles</p>
+    </div>
+  </article>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://arvind-sahu.github.io/resume.html",
+    "name": "Resume — Arvind Kumar Sahu",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Arvind Kumar Sahu",
+      "jobTitle": "Senior Software Engineer",
+      "email": "mailto:arvindkumar93258@gmail.com",
+      "telephone": "+919325860577",
+      "url": "https://arvind-sahu.github.io/",
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indian Institute of Information Technology Nagpur" },
+      "sameAs": [
+        "https://github.com/arvind-sahu",
+        "https://www.linkedin.com/in/gopherarvind/",
+        "https://www.linkedin.com/in/arvindkumar93258/",
+        "https://leetcode.com/u/arvind_iiitn"
+      ]
+    }
+  }
+  </script>
+</body>
+</html>
