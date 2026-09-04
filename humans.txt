@@ -1,15 +1,18 @@
 /* TEAM */
 Name: Arvind Kumar Sahu
+Also: Arvind Sahu, Arvind Kumar, gopherarvind, arvind-sahu
 Role: Senior Software Engineer (SSE)
-Title: Senior Software Engineer (SSE), Node.js developer, Golang developer, NestJS developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
+Title: Senior Software Engineer (SSE), Node.js developer, NestJS developer, Golang developer, JavaScript developer, TypeScript developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
+Experience: 5.6+ years
 Location: Bengaluru, India
 Email: arvindkumar93258@gmail.com
 GitHub: https://github.com/arvind-sahu
 LinkedIn: https://www.linkedin.com/in/gopherarvind/
 Site: https://arvind-sahu.github.io/
 ORCID: https://orcid.org/0009-0006-6710-9360
+Resumes: /resume.html (combined), /arvindkumar.html (Node.js), /arvindkumar-golang.html (Golang)
 
 /* SITE */
-Last update: 2026-08-30
+Last update: 2026-09-04
 Language: English
-Standards: HTML5, CSS3, Schema.org
+Standards: HTML5, CSS3, Schema.org, sitemap.xml, rss.xml

@@ -1,17 +1,31 @@
 # Arvind Kumar Sahu
 
-Official website of Arvind Kumar Sahu, Senior Software Engineer (SSE) in Bengaluru.
+Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior Software Engineer (SSE) in Bengaluru. 5.6+ years.
 
 - Name: Arvind Kumar Sahu
+- Also known as: Arvind Sahu, Arvind Kumar, gopherarvind, arvind-sahu
 - Site: https://arvind-sahu.github.io/
 - Bio: https://arvind-sahu.github.io/arvind-kumar-sahu.html
-- Roles: https://arvind-sahu.github.io/senior-software-engineer.html
-- Resume: https://arvind-sahu.github.io/resume.html
+- Roles hub: https://arvind-sahu.github.io/developers.html
+- SSE page: https://arvind-sahu.github.io/senior-software-engineer.html
+- Combined resume: https://arvind-sahu.github.io/resume.html
+- Node.js resume: https://arvind-sahu.github.io/arvindkumar.html
+- Golang resume: https://arvind-sahu.github.io/arvindkumar-golang.html
 - Resume PDF: https://arvind-sahu.github.io/ArvindKumarSahu.pdf
+- Node.js developer: https://arvind-sahu.github.io/nodejs-developer.html
+- NestJS developer: https://arvind-sahu.github.io/nestjs-developer.html
+- Golang developer: https://arvind-sahu.github.io/golang-developer.html
+- JavaScript developer: https://arvind-sahu.github.io/javascript-developer.html
+- TypeScript developer: https://arvind-sahu.github.io/typescript-developer.html
+- Backend developer: https://arvind-sahu.github.io/backend-developer.html
+- Full-stack developer: https://arvind-sahu.github.io/fullstack-developer.html
+- Databases: https://arvind-sahu.github.io/postgresql-developer.html
+- RSS: https://arvind-sahu.github.io/rss.xml
+- Sitemap: https://arvind-sahu.github.io/sitemap.xml
 - GitHub: https://github.com/arvind-sahu
 - LinkedIn: https://www.linkedin.com/in/gopherarvind/
 - ORCID: https://orcid.org/0009-0006-6710-9360
 - Email: arvindkumar93258@gmail.com
 - Education: IIIT Nagpur, B.Tech CSE
-- Titles: Senior Software Engineer, SSE, Node.js developer, Go developer, Golang developer, NestJS developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
-- Stack: Node.js, NestJS, Golang, AWS, TypeScript
+- Titles: Senior Software Engineer, SSE, Node.js developer, NestJS developer, Golang developer, Go developer, JavaScript developer, TypeScript developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
+- Stack: Node.js, NestJS, Express.js, JavaScript, TypeScript, Golang, Go, Gin, gRPC, GORM, PostgreSQL, MySQL, MongoDB, Redis, AWS DynamoDB, Elasticsearch, AWS, Docker, Kubernetes, Kafka, React, Next.js

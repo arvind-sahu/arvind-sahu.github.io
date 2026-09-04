@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arvind Kumar Sahu — Senior Software Engineer</title>
+    <link>https://arvind-sahu.github.io/</link>
+    <description>Official updates for Arvind Kumar Sahu (Arvind Sahu / Arvind Kumar): Node.js developer, NestJS developer, Golang developer. 5.6+ years. Bengaluru.</description>
+    <language>en-in</language>
+    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://arvind-sahu.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Combined ATS resume — Node.js, NestJS, Golang</title>
+      <link>https://arvind-sahu.github.io/resume.html</link>
+      <guid>https://arvind-sahu.github.io/resume.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <description>5.6+ years. PostgreSQL, MySQL, MongoDB, Redis, AWS DynamoDB.</description>
+    </item>
+    <item>
+      <title>Node.js / NestJS resume — Arvind Kumar</title>
+      <link>https://arvind-sahu.github.io/arvindkumar.html</link>
+      <guid>https://arvind-sahu.github.io/arvindkumar.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Targeted Node.js developer and NestJS developer CV.</description>
+    </item>
+    <item>
+      <title>Golang / Go resume — Arvind Kumar Sahu</title>
+      <link>https://arvind-sahu.github.io/arvindkumar-golang.html</link>
+      <guid>https://arvind-sahu.github.io/arvindkumar-golang.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Targeted Golang developer CV. Gin, gRPC, GORM, AWS.</description>
+    </item>
+    <item>
+      <title>Node.js developer</title>
+      <link>https://arvind-sahu.github.io/nodejs-developer.html</link>
+      <guid>https://arvind-sahu.github.io/nodejs-developer.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>NestJS developer</title>
+      <link>https://arvind-sahu.github.io/nestjs-developer.html</link>
+      <guid>https://arvind-sahu.github.io/nestjs-developer.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Golang developer</title>
+      <link>https://arvind-sahu.github.io/golang-developer.html</link>
+      <guid>https://arvind-sahu.github.io/golang-developer.html</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
