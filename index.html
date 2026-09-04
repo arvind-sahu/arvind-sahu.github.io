@@ -73,6 +73,7 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+    #work, #about, #experience, #skills, #contact, #faq, #features { scroll-margin-top: calc(var(--nav-h) + 12px); }
     body {
       font-family: Outfit, system-ui, sans-serif;
       background: var(--ink);
@@ -167,12 +168,14 @@
     .hero-grid {
       display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;
     }
+    .hero-grid > * { min-width: 0; }
     .status-pill {
-      display: inline-flex; align-items: center; gap: 0.5rem;
+      display: inline-flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
       padding: 0.35rem 0.8rem; border-radius: 999px;
       border: 1px solid rgba(61, 214, 140, 0.35);
       color: var(--ok); font-size: 0.82rem; font-weight: 600;
       background: rgba(61, 214, 140, 0.08); margin-bottom: 1.2rem;
+      max-width: 100%;
     }
     .status-pill i {
       width: 8px; height: 8px; border-radius: 50%; background: var(--ok);
@@ -182,7 +185,7 @@
     @keyframes pulse {
       70% { box-shadow: 0 0 0 10px transparent; }
     }
-    h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); margin-bottom: 0.85rem; }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); margin-bottom: 0.85rem; overflow-wrap: anywhere; }
     h1 em { font-style: normal; color: var(--gopher); }
     .role-line {
       font-size: clamp(1.05rem, 2vw, 1.35rem); color: var(--muted); min-height: 2.2rem; margin-bottom: 1.2rem;
@@ -194,7 +197,7 @@
       animation: sheen 3.2s linear infinite;
     }
     @keyframes sheen { to { background-position: -200% 0; } }
-    .hero p { color: var(--muted); max-width: 540px; margin-bottom: 1.8rem; }
+    #hero p { color: var(--muted); max-width: min(540px, 100%); margin-bottom: 1.8rem; overflow-wrap: anywhere; }
     .hero-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2rem; }
     .meta-row { display: flex; gap: 1.4rem; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; }
     .meta-row strong { color: var(--cream); font-weight: 600; }
@@ -325,6 +328,153 @@
       margin: 0.75rem 0 0.9rem; border: 1px solid var(--line);
     }
 
+    .live-head {
+      display: flex; justify-content: space-between; gap: 1rem; align-items: end; flex-wrap: wrap;
+      margin: 0.4rem 0 1.4rem;
+    }
+    .live-head p { color: var(--muted); max-width: 560px; }
+    .live-head .url {
+      font-size: 0.88rem; color: var(--gopher); word-break: break-all;
+    }
+
+    .device-stage {
+      position: relative;
+      height: min(64vw, 640px);
+      max-width: 1040px;
+      margin: 0 auto 1.2rem;
+    }
+    .device { position: absolute; margin: 0; }
+    .device figcaption {
+      text-align: center; color: var(--muted); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.55rem;
+    }
+    .hollow {
+      background: linear-gradient(180deg, rgba(16, 21, 28, 0.28), rgba(6, 8, 12, 0.08));
+      border: 1.5px solid rgba(232, 176, 112, 0.32);
+      box-shadow:
+        inset 0 0 0 1px rgba(0, 173, 216, 0.14),
+        0 28px 70px rgba(0, 0, 0, 0.5),
+        0 0 48px rgba(0, 173, 216, 0.1);
+      backdrop-filter: blur(12px);
+    }
+    .screen-cutout {
+      display: block; overflow: hidden; background: #05070a;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+    }
+    .screen-cutout img {
+      width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block;
+    }
+
+    .device.laptop { left: 12%; right: 16%; bottom: 7%; z-index: 1; }
+    .laptop-lid {
+      border-radius: 16px 16px 6px 6px; padding: 11px 11px 8px;
+    }
+    .laptop-lid .camera {
+      width: 7px; height: 7px; border-radius: 50%; margin: 0 auto 7px;
+      background: radial-gradient(circle at 40% 35%, #9aa4b0, #2a3340 55%, #111);
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.35);
+    }
+    .laptop-lid .screen-cutout { border-radius: 6px; aspect-ratio: 16 / 10; }
+    .laptop-base {
+      height: 16px; margin: 0 3%; border-radius: 0 0 20px 20px; border-top: 0;
+      position: relative;
+    }
+    .laptop-base::after {
+      content: ""; position: absolute; left: 50%; bottom: 4px; transform: translateX(-50%);
+      width: 16%; height: 5px; border-radius: 6px;
+      border: 1px solid rgba(232, 176, 112, 0.28); background: transparent;
+    }
+
+    .device.tablet {
+      left: 1.5%; bottom: 0; width: 27%; z-index: 2;
+      transform: rotate(-7deg);
+    }
+    .tablet-shell {
+      border-radius: 22px; padding: 14px 12px;
+    }
+    .tablet-shell .screen-cutout { border-radius: 8px; aspect-ratio: 4 / 3; }
+    .tablet-shell .home-dot {
+      width: 7px; height: 7px; border-radius: 50%; margin: 8px auto 0;
+      border: 1px solid rgba(243, 238, 230, 0.28); background: transparent;
+    }
+
+    .device.phone {
+      right: 3%; bottom: -3%; width: 16.5%; z-index: 3;
+      transform: rotate(8deg);
+      animation: floaty 6s ease-in-out infinite;
+    }
+    .phone-shell {
+      position: relative; border-radius: 32px; padding: 14px 8px 12px;
+    }
+    .phone-shell .notch {
+      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+      width: 42%; height: 11px; border-radius: 999px; background: #06080c; z-index: 2;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+    }
+    .phone-shell .screen-cutout { border-radius: 18px; aspect-ratio: 390 / 844; }
+    .phone-shell .screen-cutout img { object-fit: contain; background: #12080c; }
+    .phone-shell .home-bar {
+      width: 34%; height: 4px; border-radius: 999px; margin: 8px auto 0;
+      background: rgba(243, 238, 230, 0.22);
+    }
+
+    .device-legend {
+      display: flex; justify-content: center; gap: 0.7rem; flex-wrap: wrap; margin-bottom: 2.2rem;
+    }
+    .device-legend span {
+      font-size: 0.78rem; color: var(--muted); border: 1px solid var(--line);
+      border-radius: 999px; padding: 0.28rem 0.7rem; background: rgba(16, 21, 28, 0.6);
+    }
+    .device-switch { display: none; }
+
+    .feature-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem;
+      margin: 1.3rem 0 1.8rem;
+    }
+    .feature-card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+      padding: 1.1rem 1.15rem;
+    }
+    .feature-card .pair {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--copper); margin-bottom: 0.4rem;
+    }
+    .feature-card h3 { font-size: 1.02rem; font-family: Syne, sans-serif; margin-bottom: 0.4rem; }
+    .feature-card p { color: var(--muted); font-size: 0.9rem; }
+    .compare-wrap {
+      overflow-x: auto; -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--line); border-radius: var(--radius);
+      margin: 1rem 0 2.2rem; background: var(--panel);
+    }
+    .compare { width: 100%; border-collapse: collapse; min-width: 560px; }
+    .compare th, .compare td {
+      padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid var(--line);
+      font-size: 0.92rem; vertical-align: top;
+    }
+    .compare th { color: var(--copper); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .compare tr:last-child td { border-bottom: 0; }
+    .compare td:nth-child(2) { color: var(--ok); font-weight: 600; white-space: nowrap; }
+    .compare td:nth-child(3) { color: var(--muted); white-space: nowrap; }
+
+    .site-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem;
+    }
+    .site-card {
+      display: flex; flex-direction: column; gap: 0.65rem;
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 0.9rem; color: var(--cream); min-height: 100%;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .site-card:hover { transform: translateY(-5px); border-color: rgba(0, 173, 216, 0.45); color: var(--cream); }
+    .site-card .thumb {
+      border-radius: 12px; overflow: hidden; border: 1px solid var(--line);
+      aspect-ratio: 16 / 10; background: #0b0f14;
+    }
+    .site-card .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .site-card h3 { font-size: 1.02rem; font-family: Syne, sans-serif; }
+    .site-card p { color: var(--muted); font-size: 0.9rem; flex: 1; }
+    .site-card .host { color: var(--gopher); font-size: 0.78rem; word-break: break-all; }
+
     .edu-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem; }
     details {
       background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 1rem 1.2rem;
@@ -358,14 +508,69 @@
     .reveal.in { opacity: 1; transform: none; }
 
     @media (max-width: 900px) {
-      .hero-grid, .about-grid, .skills-grid, .bento, .edu-grid, .contact-grid, .stats {
+      .hero-grid, .about-grid, .skills-grid, .bento, .edu-grid, .contact-grid, .site-grid, .feature-grid {
         grid-template-columns: 1fr;
       }
-      .nav-links { display: none; position: absolute; top: var(--nav-h); right: 1.2rem; flex-direction: column;
-        background: var(--panel); padding: 1rem; border-radius: 16px; border: 1px solid var(--line); }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .container { width: min(var(--max), calc(100% - 1.6rem)); }
+      section { padding: 4.2rem 0; }
+      #hero {
+        min-height: auto;
+        padding: calc(var(--nav-h) + 1.4rem) 0 1.6rem;
+      }
+      h1 { font-size: clamp(1.9rem, 9vw, 2.5rem); }
+      .status-pill { font-size: 0.74rem; max-width: 100%; white-space: normal; }
+      .hero-actions { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+      .hero-actions .btn { width: 100%; }
+      .hero-actions .btn-primary { grid-column: 1 / -1; }
+      .orbit-wrap { width: min(86%, 300px); margin-top: 0.4rem; }
+      .orbit-wrap .chip { font-size: 0.64rem; padding: 0.28rem 0.48rem; }
+      .orbit-wrap .chip:nth-child(5) { right: 2%; }
+      .orbit-wrap .chip:nth-child(8) { left: 2%; }
+      .cursor-glow { display: none; }
+      .device-legend { display: none; }
+      .device-switch {
+        display: flex; justify-content: center; gap: 0.4rem; flex-wrap: wrap;
+        margin: 0 auto 1rem;
+      }
+      .device-switch button {
+        border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+        border-radius: 999px; padding: 0.45rem 0.9rem; font-size: 0.82rem; font-weight: 600; cursor: pointer;
+      }
+      .device-switch button.on {
+        color: #041016; background: linear-gradient(120deg, var(--gopher), #5eead4); border-color: transparent;
+      }
+      .device-stage {
+        height: auto;
+        display: block;
+        margin-bottom: 1.6rem;
+      }
+      .device.laptop, .device.tablet, .device.phone {
+        position: relative; left: auto; right: auto; bottom: auto;
+        transform: none; animation: none; display: none; margin: 0 auto;
+      }
+      .device-stage[data-show="laptop"] .device.laptop,
+      .device-stage[data-show="tablet"] .device.tablet,
+      .device-stage[data-show="phone"] .device.phone { display: block; }
+      .device.laptop { width: 100%; }
+      .device.tablet { width: min(88%, 420px); }
+      .device.phone { width: min(68%, 260px); }
+      .nav-links { display: none; position: absolute; top: var(--nav-h); right: 0.8rem; flex-direction: column;
+        background: var(--panel); padding: 1rem; border-radius: 16px; border: 1px solid var(--line);
+        max-height: calc(100vh - var(--nav-h) - 1rem); overflow: auto; z-index: 60; }
       .nav-links.open { display: flex; }
       .hamburger { display: flex; }
-      .orbit-wrap { margin-top: 1rem; }
+    }
+
+    @media (max-width: 560px) {
+      .stats { grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+      .stat { padding: 1rem 0.85rem; }
+      .stat b { font-size: 1.5rem; }
+      h1 { font-size: 1.85rem; }
+      h1 em { display: block; }
+      .device.phone { width: min(78%, 240px); }
+      .job-card { padding: 1.1rem 1rem; }
+      .nav-row { padding: 0 0.1rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -386,6 +591,8 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Live sites</a></li>
+          <li><a href="#features">Features</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="arvindkumar.html">Node.js CV</a></li>
@@ -453,20 +660,18 @@
         <div class="container about-grid">
           <div class="reveal">
             <p class="kicker">About</p>
-            <h2>Senior backend developer who still ships the full stack</h2>
+            <h2>What I ship in production</h2>
             <p class="lede" style="margin: 1rem 0 1.2rem;">
               I am <strong>Arvind Kumar Sahu</strong> (<em>gopherarvind</em> on LinkedIn, <em>arvind-sahu</em> on GitHub) —
-              a <strong>Senior Software Engineer</strong>, <strong>Go developer</strong>, and
-              <strong>NestJS developer</strong> based in Bengaluru. Recruiters searching for an
-              <strong>SSE</strong>, <strong>Node.js developer</strong>, <strong>Golang developer</strong>,
-              <strong>senior backend developer</strong>, or <strong>full-stack developer with AWS</strong>
-              will find the same person: I own architecture, APIs, data, cloud, and delivery end to end.
+              a <strong>Senior Software Engineer</strong> in Bengaluru. This page lists the work itself:
+              live products, company systems, and the stack used to ship them.
             </p>
             <ul class="about-points">
-              <li>Low-latency microservices and REST APIs on Node.js (NestJS) and Golang (Gin, goroutines, GORM).</li>
-              <li>Fintech payments ready for ~10K RPS, RBAC, refunds, invoices, and BBPS / ERP integrations.</li>
-              <li>Identity and HR integrations across Workday, ADP, Dayforce, Paylocity, Zoho, and more.</li>
-              <li>AWS Lambda, S3, EC2, CloudWatch, Docker, Kubernetes, Redis, PostgreSQL, DynamoDB, Elasticsearch.</li>
+              <li><strong>Tasker</strong> — live AI project-management product on AWS CloudFront (Next.js, tRPC, Prisma, SST).</li>
+              <li><strong>Aquera</strong> — 20+ HR / identity connectors on a 380+ SaaS surface; 70% faster HR–IT onboarding.</li>
+              <li><strong>Tilli</strong> — Monay payment gateway and Beacon invoicing; ~10K RPS readiness; 40% lower API latency.</li>
+              <li><strong>SarvM.AI</strong> — hyper-local grocery and food delivery (orders, tracking, fulfillment).</li>
+              <li><strong>InCommon</strong> — Autodesk Assistant features for Revit and AutoCAD.</li>
             </ul>
           </div>
           <aside class="card reveal">
@@ -632,8 +837,210 @@
 
       <section id="work">
         <div class="container">
-          <p class="kicker">Selected work</p>
-          <h2>Systems I have designed end to end</h2>
+          <p class="kicker">Live websites</p>
+          <div class="live-head">
+            <div>
+              <h2>Tasker, in the devices it was built for</h2>
+              <p>
+                Hollow glass frames with the real homepage loaded inside —
+                laptop, tablet, and phone captures of
+                <a href="https://d3011kpjkcpcxd.cloudfront.net/">Tasker</a>.
+              </p>
+            </div>
+            <a class="url" href="https://d3011kpjkcpcxd.cloudfront.net/">d3011kpjkcpcxd.cloudfront.net →</a>
+          </div>
+
+          <div class="device-switch" role="tablist" aria-label="Choose device preview">
+            <button type="button" data-device="phone" class="on">Phone</button>
+            <button type="button" data-device="tablet">Tablet</button>
+            <button type="button" data-device="laptop">Laptop</button>
+          </div>
+          <div class="device-stage" data-show="phone" aria-label="Tasker preview on laptop, tablet, and phone">
+            <figure class="device laptop">
+              <div class="laptop-lid hollow">
+                <div class="camera" aria-hidden="true"></div>
+                <a class="screen-cutout" href="https://d3011kpjkcpcxd.cloudfront.net/">
+                  <img src="tasker-laptop.png" width="1440" height="900" alt="Tasker homepage on a laptop screen — product delivery command center" />
+                </a>
+              </div>
+              <div class="laptop-base hollow" aria-hidden="true"></div>
+              <figcaption>Laptop · 1440×900</figcaption>
+            </figure>
+
+            <figure class="device tablet">
+              <div class="tablet-shell hollow">
+                <a class="screen-cutout" href="https://d3011kpjkcpcxd.cloudfront.net/">
+                  <img src="tasker-tablet.png" width="1024" height="768" alt="Tasker homepage on a tablet — sprint board beside the hero" />
+                </a>
+                <div class="home-dot" aria-hidden="true"></div>
+              </div>
+              <figcaption>Tablet · 1024×768</figcaption>
+            </figure>
+
+            <figure class="device phone">
+              <div class="phone-shell hollow">
+                <div class="notch" aria-hidden="true"></div>
+                <a class="screen-cutout" href="https://d3011kpjkcpcxd.cloudfront.net/">
+                  <img src="tasker-mobile.png" width="390" height="844" alt="Tasker homepage on a phone — stacked CTAs and mobile nav" />
+                </a>
+                <div class="home-bar" aria-hidden="true"></div>
+              </div>
+              <figcaption>Mobile · 390×844</figcaption>
+            </figure>
+          </div>
+          <div class="device-legend">
+            <span>Laptop</span><span>Tablet</span><span>Phone</span>
+            <span>Click a screen to open the live site</span>
+          </div>
+
+          <section id="features">
+            <p class="kicker">Implemented in Tasker</p>
+            <h2>Jira-style features that are actually in the product</h2>
+            <p class="lede" style="margin: 0.8rem 0 0;">
+              These are live in
+              <a href="https://d3011kpjkcpcxd.cloudfront.net/">Tasker</a>
+              — not a marketing checklist. Source:
+              <a href="https://github.com/arvind-sahu/Task-Mgmt">Task-Mgmt</a>.
+            </p>
+            <div class="feature-grid">
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Board</p>
+                <h3>Kanban board</h3>
+                <p>Drag-drop columns from custom workflow statuses. Create and move tasks without leaving the project.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Backlog / Sprint</p>
+                <h3>Sprint planning</h3>
+                <p>Sprints with start/end dates, current-sprint view, and tasks assigned to a sprint.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Issues</p>
+                <h3>Tasks with owners</h3>
+                <p>Title, description, priority, deadline, multiple assignees, tags, and creator — the issue model.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Workflows</p>
+                <h3>Custom workflows</h3>
+                <p>Per-project statuses, allowed transitions, and gates that require a comment or attachment.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Comments</p>
+                <h3>Comments and @mentions</h3>
+                <p>Task discussion with rich text, mention autocomplete, and author edit/delete rules.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Attachments</p>
+                <h3>Files on tasks</h3>
+                <p>Task attachments stored on S3 with signed URLs and type checks.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Notifications</p>
+                <h3>Inbox</h3>
+                <p>In-app notifications for assignments, comments, and mentions.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Tempo / work logs</p>
+                <h3>Time tracking</h3>
+                <p>Hours logged against a task, by member and date, with a dedicated time-tracking view.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Timeline</p>
+                <h3>Project timeline</h3>
+                <p>Per-project timeline of work across the sprint window.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Dashboard</p>
+                <h3>Dashboard</h3>
+                <p>My tasks, recent work, and project overview for the signed-in user.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Roles</p>
+                <h3>Roles and company workspace</h3>
+                <p>Owner / Admin / Member / Viewer on projects, plus company members and invites.</p>
+              </article>
+              <article class="feature-card reveal">
+                <p class="pair">Like Jira Access</p>
+                <h3>Auth and invites</h3>
+                <p>Sign in, company signup, project invites, OTP, and session-backed access.</p>
+              </article>
+            </div>
+            <div class="compare-wrap">
+              <table class="compare">
+                <thead>
+                  <tr>
+                    <th>Capability</th>
+                    <th>Tasker</th>
+                    <th>Jira</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Kanban board + status columns</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Sprints and backlog-style planning</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Issues: priority, due date, assignees, labels</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Custom workflow + transition rules</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Comments, @mentions, attachments</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Notifications / inbox</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Time tracking</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Project timeline</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Company workspace + project roles</td><td>Shipped</td><td>Shipped</td></tr>
+                  <tr><td>Reports, calendar, files hub</td><td>Coming soon</td><td>Shipped</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <p class="kicker">All links</p>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);">Websites and short view</h2>
+          <div class="site-grid">
+            <a class="site-card reveal" href="https://d3011kpjkcpcxd.cloudfront.net/">
+              <div class="thumb"><img src="tasker-laptop.png" width="1440" height="900" alt="Tasker live product thumbnail" /></div>
+              <h3>Tasker</h3>
+              <p>AI project management and Jira alternative. Sprint boards, collaboration, AWS CloudFront production.</p>
+              <span class="host">d3011kpjkcpcxd.cloudfront.net</span>
+            </a>
+            <a class="site-card reveal" href="https://arvind-sahu.github.io/">
+              <div class="thumb"><img src="portfolio-home.png" width="1440" height="900" alt="Arvind Kumar Sahu official website thumbnail" /></div>
+              <h3>Official website</h3>
+              <p>This portfolio — Senior Software Engineer, Node.js, Golang, NestJS, AWS. Bengaluru.</p>
+              <span class="host">arvind-sahu.github.io</span>
+            </a>
+            <a class="site-card reveal" href="resume.html">
+              <h3>Combined resume</h3>
+              <p>ATS HTML resume covering Node.js, NestJS, Golang, and AWS in one page.</p>
+              <span class="host">arvind-sahu.github.io/resume.html</span>
+            </a>
+            <a class="site-card reveal" href="arvindkumar.html">
+              <h3>Node.js / NestJS CV</h3>
+              <p>Role-targeted resume for Node.js developer and NestJS developer searches.</p>
+              <span class="host">arvind-sahu.github.io/arvindkumar.html</span>
+            </a>
+            <a class="site-card reveal" href="arvindkumar-golang.html">
+              <h3>Golang CV</h3>
+              <p>Role-targeted resume for Go / Golang developer searches (Gin, GORM, AWS).</p>
+              <span class="host">arvind-sahu.github.io/arvindkumar-golang.html</span>
+            </a>
+            <a class="site-card reveal" href="https://github.com/arvind-sahu/Task-Mgmt">
+              <h3>Tasker source</h3>
+              <p>T3 stack: Next.js, tRPC, Prisma, NextAuth, Postgres, serverless AWS via SST.</p>
+              <span class="host">github.com/arvind-sahu/Task-Mgmt</span>
+            </a>
+            <a class="site-card reveal" href="https://github.com/arvind-sahu/application-tracker">
+              <h3>Application pipeline</h3>
+              <p>Local-first job tracker — follow-up queue, daily quota, founder-note drafts. React + TypeScript.</p>
+              <span class="host">github.com/arvind-sahu/application-tracker</span>
+            </a>
+            <a class="site-card reveal" href="https://github.com/arvind-sahu/Library-Management-System">
+              <h3>Library Management System</h3>
+              <p>IIIT Nagpur library ops — books, staff, search. Node.js, SQL, later React.</p>
+              <span class="host">github.com/arvind-sahu/Library-Management-System</span>
+            </a>
+            <a class="site-card reveal" href="https://github.com/arvind-sahu">
+              <h3>GitHub</h3>
+              <p>Source, profile README, and public repositories under arvind-sahu.</p>
+              <span class="host">github.com/arvind-sahu</span>
+            </a>
+          </div>
+
           <div class="bento" style="margin-top:1.8rem;">
             <article class="project tilt reveal">
               <div>
@@ -648,30 +1055,6 @@
                 <p>Global payment gateway and invoice / BBPS product with RBAC, refunds, and 40% faster APIs.</p>
               </div>
               <div class="stack-row"><span class="mini">Node.js</span><span class="mini">Next.js</span><span class="mini">MySQL</span></div>
-            </article>
-            <article class="project tilt reveal">
-              <div>
-                <h3><a href="https://github.com/arvind-sahu/Task-Mgmt">Task-Mgmt (Tasker)</a></h3>
-                <a href="https://d3011kpjkcpcxd.cloudfront.net/">
-                  <img class="project-shot" src="tasker-home.png" width="1280" height="800" alt="Tasker web app screenshot — product delivery command center with Kanban board" />
-                </a>
-                <p>Collaboration app on the T3 stack — Next.js, tRPC, Prisma, NextAuth, Postgres, serverless AWS via SST. <a href="https://d3011kpjkcpcxd.cloudfront.net/">Live app</a>.</p>
-              </div>
-              <div class="stack-row"><span class="mini">TypeScript</span><span class="mini">tRPC</span><span class="mini">AWS</span></div>
-            </article>
-            <article class="project tilt reveal">
-              <div>
-                <h3><a href="https://github.com/arvind-sahu/Library-Management-System">Library Management System</a></h3>
-                <p>IIIT Nagpur library ops — books, staff, search. HTML, CSS, JavaScript, Node.js, SQL, later React.</p>
-              </div>
-              <div class="stack-row"><span class="mini">Node.js</span><span class="mini">SQL</span><span class="mini">React</span></div>
-            </article>
-            <article class="project tilt reveal">
-              <div>
-                <h3><a href="https://github.com/arvind-sahu/application-tracker">Application pipeline</a></h3>
-                <p>Local-first job tracker for USD-remote search from India — follow-up queue, daily quota, founder-note drafts. React + TypeScript. Data stays in the browser.</p>
-              </div>
-              <div class="stack-row"><span class="mini">TypeScript</span><span class="mini">React</span><span class="mini">Vite</span></div>
             </article>
           </div>
         </div>
@@ -851,6 +1234,20 @@
     });
     links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => links.classList.remove("open")));
 
+    const stage = document.querySelector(".device-stage");
+    document.querySelectorAll(".device-switch button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.getAttribute("data-device");
+        if (stage && id) stage.setAttribute("data-show", id);
+        document.querySelectorAll(".device-switch button").forEach((b) => b.classList.toggle("on", b === btn));
+      });
+    });
+
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
+    }
+
     if (new URLSearchParams(location.search).get("sent") === "1") {
       const b = document.getElementById("formBanner");
       if (b) b.style.display = "block";
@@ -982,8 +1379,12 @@
         "alternateName": "Task-Mgmt",
         "url": "https://d3011kpjkcpcxd.cloudfront.net/",
         "codeRepository": "https://github.com/arvind-sahu/Task-Mgmt",
-        "image": "https://arvind-sahu.github.io/tasker-home.png",
-        "screenshot": "https://arvind-sahu.github.io/tasker-home.png",
+        "image": "https://arvind-sahu.github.io/tasker-laptop.png",
+        "screenshot": [
+          "https://arvind-sahu.github.io/tasker-laptop.png",
+          "https://arvind-sahu.github.io/tasker-tablet.png",
+          "https://arvind-sahu.github.io/tasker-mobile.png"
+        ],
         "description": "Task management web app on the T3 stack — Next.js, tRPC, Prisma, NextAuth, Postgres, serverless AWS via SST.",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
