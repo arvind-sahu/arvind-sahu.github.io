@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("aks-resume-theme");
+      document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+    })();
+  </script>
   <title>Arvind Kumar | Node.js Developer Resume — NestJS, TypeScript, JavaScript | Arvind Sahu</title>
   <meta name="description" content="Arvind Kumar (Arvind Kumar Sahu / Arvind Sahu) Node.js developer resume. 5.6+ years. NestJS developer, JavaScript, TypeScript, Express.js, PostgreSQL, MySQL, MongoDB, Redis, AWS DynamoDB. Bengaluru." />
   <meta name="keywords" content="Arvind Kumar Node.js developer, Arvind Kumar Sahu Nodejs, Arvind Sahu NestJS developer, nodejs developer resume, nestjs developer India, JavaScript developer, TypeScript developer, Express.js, PostgreSQL, MongoDB, Redis, AWS, arvind-sahu" />
@@ -21,22 +28,24 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Arvind Kumar Sahu","alternateName":["Arvind Kumar","Arvind Sahu","gopherarvind","arvind-sahu"],"jobTitle":"Node.js Developer","description":"Node.js developer and NestJS developer with 5.6+ years. TypeScript, Express.js, PostgreSQL, MySQL, MongoDB, Redis, AWS DynamoDB.","url":"https://arvind-sahu.github.io/arvindkumar.html","image":"https://arvind-sahu.github.io/profile.png","sameAs":["https://www.linkedin.com/in/gopherarvind/","https://github.com/arvind-sahu","https://leetcode.com/u/arvind_iiitn"],"knowsAbout":["Node.js","NestJS","Express.js","JavaScript","TypeScript","PostgreSQL","MySQL","MongoDB","Redis","DynamoDB","AWS","BullMQ","React","Next.js"],"address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"}}
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="resumes.css" />
 </head>
 <body>
   <div class="bar">
-    <span>ATS resume · Node.js / NestJS track · Print → Save as PDF</span>
-    <span>
-      <a href="/resume.html">Combined</a> ·
-      <a href="/arvindkumar.html" aria-current="page">Node.js</a> ·
-      <a href="/arvindkumar-golang.html">Golang</a> ·
-      <a href="/ArvindKumarSahu.pdf">PDF</a> ·
-      <a href="/nodejs-developer.html">Node.js page</a> ·
-      <a href="/nestjs-developer.html">NestJS page</a> ·
-      <a href="/">Portfolio</a> ·
-      <a href="https://www.linkedin.com/in/gopherarvind/">LinkedIn</a> ·
-      <a href="javascript:window.print()">Print / PDF</a>
-    </span>
+    <nav class="bar-links" aria-label="Resume versions">
+      <a href="/resume.html">Combined</a>
+      <a href="/arvindkumar.html" aria-current="page">Node.js</a>
+      <a href="/arvindkumar-golang.html">Golang</a>
+      <a href="/ArvindKumarSahu.pdf">PDF</a>
+      <a href="/">Portfolio</a>
+    </nav>
+    <div class="bar-actions">
+      <button type="button" class="theme-btn" id="themeToggle" aria-pressed="true">Light mode</button>
+      <button type="button" class="print-btn" onclick="window.print()">Print / PDF</button>
+    </div>
   </div>
   <main class="sheet">
     <h1>Arvind Kumar Sahu</h1>
@@ -142,5 +151,6 @@
     <h2>Also available</h2>
     <p>Golang-targeted resume: <a href="/arvindkumar-golang.html">arvindkumar-golang.html</a> · Combined: <a href="/resume.html">resume.html</a> · Hire page: <a href="/nodejs-developer.html">nodejs-developer.html</a></p>
   </main>
+  <script src="resumes.js"></script>
 </body>
 </html>

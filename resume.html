@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("aks-resume-theme");
+      document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+    })();
+  </script>
   <title>Arvind Kumar Sahu | Resume — Node.js, NestJS, Golang, AWS | 5.6+ Years</title>
   <meta name="description" content="ATS resume of Arvind Kumar Sahu (Arvind Sahu / Arvind Kumar): Senior Software Engineer, 5.6+ years. Node.js developer, NestJS developer, Golang developer. PostgreSQL, MySQL, MongoDB, Redis, AWS, DynamoDB. Bengaluru. IIIT Nagpur." />
   <meta name="keywords" content="Arvind Kumar Sahu resume, Arvind Sahu resume, Arvind Kumar resume, Arvind Kumar Sahu Node.js developer, NestJS developer, Golang developer, Go developer, JavaScript developer, TypeScript developer, PostgreSQL, MySQL, MongoDB, Redis, AWS DynamoDB, arvind-sahu, gopherarvind" />
@@ -25,22 +32,24 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Arvind Kumar Sahu","alternateName":["Arvind Sahu","Arvind Kumar","gopherarvind","arvind-sahu"],"jobTitle":"Senior Software Engineer","description":"Senior Software Engineer with 5.6+ years. Node.js, NestJS, Golang, JavaScript, TypeScript, PostgreSQL, MySQL, MongoDB, Redis, AWS, DynamoDB.","url":"https://arvind-sahu.github.io/resume.html","image":"https://arvind-sahu.github.io/profile.png","email":"mailto:arvindkumar93258@gmail.com","telephone":"+919325860577","sameAs":["https://www.linkedin.com/in/gopherarvind/","https://github.com/arvind-sahu","https://leetcode.com/u/arvind_iiitn","https://orcid.org/0009-0006-6710-9360"],"knowsAbout":["Node.js","NestJS","Express.js","JavaScript","TypeScript","Golang","Go","Gin","gRPC","GORM","PostgreSQL","MySQL","MongoDB","Redis","DynamoDB","Elasticsearch","AWS","Lambda","S3","EC2","SQS","Docker","Kubernetes","Kafka","React","Next.js","Microservices"],"address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"}}
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="resumes.css" />
 </head>
 <body>
   <div class="bar">
-    <span>ATS resume · Combined stack · Print → Save as PDF</span>
-    <span>
-      <a href="/resume.html" aria-current="page">Combined</a> ·
-      <a href="/arvindkumar.html">Node.js</a> ·
-      <a href="/arvindkumar-golang.html">Golang</a> ·
-      <a href="/ArvindKumarSahu.pdf">PDF</a> ·
-      <a href="/">Portfolio</a> ·
-      <a href="/developers.html">Node.js / NestJS / Go</a> ·
-      <a href="https://www.linkedin.com/in/gopherarvind/">LinkedIn</a> ·
-      <a href="https://github.com/arvind-sahu">GitHub</a> ·
-      <a href="javascript:window.print()">Print / PDF</a>
-    </span>
+    <nav class="bar-links" aria-label="Resume versions">
+      <a href="/resume.html" aria-current="page">Combined</a>
+      <a href="/arvindkumar.html">Node.js</a>
+      <a href="/arvindkumar-golang.html">Golang</a>
+      <a href="/ArvindKumarSahu.pdf">PDF</a>
+      <a href="/">Portfolio</a>
+    </nav>
+    <div class="bar-actions">
+      <button type="button" class="theme-btn" id="themeToggle" aria-pressed="true">Light mode</button>
+      <button type="button" class="print-btn" onclick="window.print()">Print / PDF</button>
+    </div>
   </div>
   <main class="sheet">
     <h1>Arvind Kumar Sahu</h1>
@@ -166,5 +175,6 @@
       <li>Hire pages: <a href="/nodejs-developer.html">Node.js developer</a> · <a href="/nestjs-developer.html">NestJS developer</a> · <a href="/golang-developer.html">Golang developer</a></li>
     </ul>
   </main>
+  <script src="resumes.js"></script>
 </body>
 </html>

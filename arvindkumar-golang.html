@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <script>
+    (function () {
+      var t = localStorage.getItem("aks-resume-theme");
+      document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark");
+    })();
+  </script>
   <title>Arvind Kumar Sahu | Golang Developer Resume — Go, Gin, gRPC, AWS | Arvind Sahu</title>
   <meta name="description" content="Golang developer resume for Arvind Kumar Sahu (Arvind Sahu / Arvind Kumar). 5.6+ years. Go, Gin, gRPC, GORM, PostgreSQL, MySQL, Redis, AWS DynamoDB. Bengaluru. gopherarvind." />
   <meta name="keywords" content="Arvind Kumar Golang developer, Arvind Sahu Go developer, Arvind Kumar Sahu golang, golang developer resume, go developer Bengaluru, Gin, gRPC, GORM, PostgreSQL, Redis, DynamoDB, AWS, gopherarvind" />
@@ -20,21 +27,24 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Arvind Kumar Sahu","alternateName":["Arvind Sahu","Arvind Kumar","gopherarvind","arvind-sahu"],"jobTitle":"Golang Developer","description":"Golang / Go developer with 5.6+ years. Gin, gRPC, GORM, goroutines, PostgreSQL, MySQL, Redis, DynamoDB, AWS.","url":"https://arvind-sahu.github.io/arvindkumar-golang.html","image":"https://arvind-sahu.github.io/profile.png","sameAs":["https://www.linkedin.com/in/gopherarvind/","https://github.com/arvind-sahu","https://leetcode.com/u/arvind_iiitn"],"knowsAbout":["Golang","Go","Gin","gRPC","GORM","goroutines","PostgreSQL","MySQL","Redis","DynamoDB","AWS","Docker","Kubernetes","Microservices"],"address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"}}
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="resumes.css" />
 </head>
 <body>
   <div class="bar">
-    <span>ATS resume · Golang / Go track · Print → Save as PDF</span>
-    <span>
-      <a href="/resume.html">Combined</a> ·
-      <a href="/arvindkumar.html">Node.js</a> ·
-      <a href="/arvindkumar-golang.html" aria-current="page">Golang</a> ·
-      <a href="/ArvindKumarSahu.pdf">PDF</a> ·
-      <a href="/golang-developer.html">Golang page</a> ·
-      <a href="/">Portfolio</a> ·
-      <a href="https://www.linkedin.com/in/gopherarvind/">LinkedIn</a> ·
-      <a href="javascript:window.print()">Print / PDF</a>
-    </span>
+    <nav class="bar-links" aria-label="Resume versions">
+      <a href="/resume.html">Combined</a>
+      <a href="/arvindkumar.html">Node.js</a>
+      <a href="/arvindkumar-golang.html" aria-current="page">Golang</a>
+      <a href="/ArvindKumarSahu.pdf">PDF</a>
+      <a href="/">Portfolio</a>
+    </nav>
+    <div class="bar-actions">
+      <button type="button" class="theme-btn" id="themeToggle" aria-pressed="true">Light mode</button>
+      <button type="button" class="print-btn" onclick="window.print()">Print / PDF</button>
+    </div>
   </div>
   <main class="sheet">
     <h1>Arvind Kumar Sahu</h1>
@@ -140,5 +150,6 @@
     <h2>Also available</h2>
     <p>Node.js / NestJS resume: <a href="/arvindkumar.html">arvindkumar.html</a> · Combined: <a href="/resume.html">resume.html</a> · Hire page: <a href="/golang-developer.html">golang-developer.html</a></p>
   </main>
+  <script src="resumes.js"></script>
 </body>
 </html>
