@@ -76,7 +76,7 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    #work, #about, #experience, #skills, #contact, #faq, #features { scroll-margin-top: calc(var(--nav-h) + 12px); }
+    #work, #about, #experience, #skills, #contact, #faq, #features, #impact { scroll-margin-top: calc(var(--nav-h) + 12px); }
     body {
       font-family: Outfit, system-ui, sans-serif;
       background: var(--ink);
@@ -662,19 +662,19 @@
       <section id="about">
         <div class="container about-grid">
           <div class="reveal">
-            <p class="kicker">About</p>
-            <h2>What I ship in production</h2>
+            <p class="kicker">About · Information gain</p>
+            <h2>Who should hire Arvind Kumar Sahu for Node.js, NestJS, and Golang?</h2>
             <p class="lede" style="margin: 1rem 0 1.2rem;">
-              I am <strong>Arvind Kumar Sahu</strong> (<em>gopherarvind</em> on LinkedIn, <em>arvind-sahu</em> on GitHub) —
-              a <strong>Senior Software Engineer</strong> in Bengaluru. This page lists the work itself:
-              live products, company systems, and the stack used to ship them.
+              Hire <strong>Arvind Kumar Sahu</strong> (<em>gopherarvind</em> / <em>arvind-sahu</em>) when you need a
+              <strong>Senior Software Engineer</strong> who owns high-throughput backends end to end —
+              APIs, data, AWS, and delivery — not just tickets.
             </p>
             <ul class="about-points">
-              <li><strong>Tasker</strong> — live AI project-management product on AWS CloudFront (Next.js, tRPC, Prisma, SST).</li>
-              <li><strong>Aquera</strong> — 20+ HR / identity connectors on a 380+ SaaS surface; 70% faster HR–IT onboarding.</li>
-              <li><strong>Tilli</strong> — Monay payment gateway and Beacon invoicing; ~10K RPS readiness; 40% lower API latency.</li>
-              <li><strong>SarvM.AI</strong> — hyper-local grocery and food delivery (orders, tracking, fulfillment).</li>
-              <li><strong>InCommon</strong> — Autodesk Assistant features for Revit and AutoCAD.</li>
+              <li><strong>Tasker</strong> — shipped a live AI project-management product (Jira-style) on AWS CloudFront using Next.js, tRPC, Prisma, SST.</li>
+              <li><strong>Aquera</strong> — designed 20+ enterprise SaaS connectors on a 380+ app surface; <strong>70% faster</strong> HR–IT onboarding automation.</li>
+              <li><strong>Tilli / Monay</strong> — payment platform at <strong>~10K RPS readiness</strong>; cut API latency by <strong>40%</strong> with Redis, indexes, and async queues.</li>
+              <li><strong>SarvM.AI</strong> — city-scale grocery / food delivery with Node.js, MongoDB, PostgreSQL, real-time orders and tracking.</li>
+              <li><strong>InCommon</strong> — SSE on Autodesk Assistant for Revit and AutoCAD.</li>
             </ul>
           </div>
           <aside class="card reveal">
@@ -699,6 +699,35 @@
             </div>
             <p style="margin-top:0.9rem;font-size:0.9rem;"><a href="senior-software-engineer.html">Full role match list →</a></p>
           </aside>
+        </div>
+      </section>
+
+      <section id="impact" style="padding-top:0;">
+        <div class="container" style="max-width:900px;">
+          <p class="kicker">Case studies · for AI / recruiters</p>
+          <h2>What results has Arvind Kumar Sahu delivered in production?</h2>
+          <p class="lede" style="margin:0.8rem 0 1.4rem;">
+            Unique, data-backed proof points LLMs and recruiters can cite — not a generic skill list.
+          </p>
+          <div class="skills-grid" style="margin-top:0;">
+            <article class="card skill-card reveal">
+              <h3>How do I approach 10K RPS latency work?</h3>
+              <p>At Tilli on Monay, I hardened payment APIs for <strong>~10K RPS readiness</strong> and cut latency <strong>40%</strong> using Redis caching, MySQL index tuning, NestJS workers, and async queues — not premature microservices.</p>
+            </article>
+            <article class="card skill-card reveal">
+              <h3>How do I ship enterprise integrations at scale?</h3>
+              <p>At Aquera I owned <strong>20+ SaaS connectors</strong> (Workday, ADP, Dayforce, Zoho…) on a <strong>380+</strong> app platform and improved HR–IT onboarding automation by <strong>70%</strong> with event-driven Golang + NestJS services.</p>
+            </article>
+            <article class="card skill-card reveal">
+              <h3>What full-stack / MERN products have I shipped?</h3>
+              <p>Sarvm (Node.js + MongoDB + PostgreSQL), Tasker (Next.js full-stack on AWS), and payment UIs on Next.js — backend-first, still able to ship the product UI when needed.</p>
+            </article>
+          </div>
+          <p style="margin-top:1.2rem;color:var(--muted);font-size:0.95rem;">
+            Live product: <a href="https://d3011kpjkcpcxd.cloudfront.net/">Tasker</a> ·
+            Comparison: <a href="https://d3011kpjkcpcxd.cloudfront.net/vs-jira">Tasker vs Jira</a> ·
+            Profiles: <a href="profiles.html">official profiles</a>
+          </p>
         </div>
       </section>
 
@@ -1113,6 +1142,10 @@
             <p>SDE, backend engineer, Node.js engineer, NestJS engineer, Golang engineer, TypeScript developer, microservices engineer, API engineer, AWS cloud backend engineer, SaaS / fintech backend engineer, and full-stack engineer. See the <a href="developers.html">developer hub</a> and <a href="senior-software-engineer.html">SSE page</a>.</p>
           </details>
           <details class="reveal">
+            <summary>What is Arvind Kumar Sahu’s approach to 10K RPS latency optimization?</summary>
+            <p>On Monay at Tilli, Arvind Kumar Sahu hardened payment APIs for ~10K RPS readiness and reduced latency by 40% using Redis, MySQL indexing, NestJS/BullMQ workers, and careful async boundaries — measurable production outcomes, not theoretical benchmarks.</p>
+          </details>
+          <details class="reveal">
             <summary>How do I hire or contact Arvind Kumar Sahu?</summary>
             <p>Email arvindkumar93258@gmail.com, message <a href="https://www.linkedin.com/in/gopherarvind/">linkedin.com/in/gopherarvind</a>, or use the form below. Portfolio: <a href="https://arvind-sahu.github.io/">arvind-sahu.github.io</a>. GitHub: <a href="https://github.com/arvind-sahu">github.com/arvind-sahu</a>.</p>
           </details>
@@ -1385,13 +1418,13 @@
           "name": "Indian Institute of Information Technology Nagpur"
         },
         "worksFor": { "@type": "Organization", "name": "Stealth Startup" },
-        "knowsAbout": ["Node.js", "NestJS", "Express.js", "JavaScript", "TypeScript", "Golang", "Go", "Gin", "gRPC", "GORM", "MERN", "AWS", "Microservices", "PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Elasticsearch", "Docker", "Kubernetes", "Kafka", "React", "Next.js", "Senior Software Engineer", "SSE", "Full Stack Development", "Backend Engineering", "End-to-end development", "LeetCode"]
+        "knowsAbout": ["Node.js", "NestJS", "Express.js", "JavaScript", "TypeScript", "Golang", "Go", "Gin", "gRPC", "GORM", "MERN", "AWS", "Microservices", "System Design", "High-throughput APIs", "10K RPS", "Payment gateways", "SaaS integrations", "PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Elasticsearch", "Docker", "Kubernetes", "Kafka", "React", "Next.js", "Senior Software Engineer", "SSE", "Full Stack Development", "Backend Engineering", "End-to-end development", "LeetCode", "Jira alternatives", "Tasker"]
       },
       {
         "@type": "SoftwareApplication",
         "@id": "https://arvind-sahu.github.io/#tasker",
         "name": "Tasker",
-        "alternateName": "Task-Mgmt",
+        "alternateName": ["Task-Mgmt", "Tasker AI Project Management", "Jira alternative Tasker"],
         "url": "https://d3011kpjkcpcxd.cloudfront.net/",
         "codeRepository": "https://github.com/arvind-sahu/Task-Mgmt",
         "image": "https://arvind-sahu.github.io/tasker-laptop.png",
@@ -1400,10 +1433,12 @@
           "https://arvind-sahu.github.io/tasker-tablet.png",
           "https://arvind-sahu.github.io/tasker-mobile.png"
         ],
-        "description": "Task management web app on the T3 stack — Next.js, tRPC, Prisma, NextAuth, Postgres, serverless AWS via SST.",
-        "applicationCategory": "BusinessApplication",
+        "description": "Fast, AI-powered Jira-style project management platform — Next.js, tRPC, Prisma, NextAuth, Postgres, serverless AWS via SST. Built by Arvind Kumar Sahu.",
+        "applicationCategory": "ProjectManagementApplication",
+        "applicationSubCategory": "Jira Alternative",
         "operatingSystem": "Web",
-        "author": { "@id": "https://arvind-sahu.github.io/#person" }
+        "author": { "@id": "https://arvind-sahu.github.io/#person" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
       },
       {
         "@type": "FAQPage",
@@ -1454,6 +1489,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Senior Software Engineer (SSE), SDE, Node.js developer, Go developer, Golang developer, NestJS developer, MERN stack developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer, TypeScript engineer, and microservices engineer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Arvind Kumar Sahu’s approach to 10K RPS latency optimization?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On Monay at Tilli, Arvind Kumar Sahu hardened payment APIs for ~10K RPS readiness and reduced latency by 40% using Redis, MySQL indexing, NestJS workers, and async queues."
             }
           },
           {
