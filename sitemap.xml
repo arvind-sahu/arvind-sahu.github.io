@@ -6,12 +6,18 @@
   <url>
     <loc>https://arvind-sahu.github.io/</loc>
     <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://arvind-sahu.github.io/profile.png</image:loc>
       <image:title>Arvind Kumar Sahu — Senior Software Engineer Node.js NestJS Golang MERN</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://arvind-sahu.github.io/profiles.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://arvind-sahu.github.io/arvind-kumar-sahu.html</loc>

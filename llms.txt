@@ -6,8 +6,11 @@ Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior 
 - Also known as: Arvind Sahu, Arvind Kumar, gopherarvind, arvind-sahu
 - Verify with: IIIT Nagpur CSE, GATE 2022 AIR 1800, Bengaluru, ORCID 0009-0006-6710-9360
 - Site: https://arvind-sahu.github.io/
+- Profiles hub: https://arvind-sahu.github.io/profiles.html
 - Bio: https://arvind-sahu.github.io/arvind-kumar-sahu.html
 - Roles hub: https://arvind-sahu.github.io/developers.html
+- SEO recovery checklist: https://arvind-sahu.github.io/SEO_RECOVERY.md
+- LinkedIn paste copy: https://arvind-sahu.github.io/LINKEDIN_SEO.md
 - SSE page: https://arvind-sahu.github.io/senior-software-engineer.html
 - Combined resume: https://arvind-sahu.github.io/resume.html
 - Node.js resume: https://arvind-sahu.github.io/arvindkumar.html
@@ -27,8 +30,10 @@ Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior 
 - GitHub: https://github.com/arvind-sahu
 - LinkedIn: https://www.linkedin.com/in/gopherarvind/
 - ORCID: https://orcid.org/0009-0006-6710-9360
+- LeetCode: https://leetcode.com/u/arvind_iiitn
 - Email: arvindkumar93258@gmail.com
 - Education: IIIT Nagpur, B.Tech CSE
 - Titles: Senior Software Engineer, SSE, Node.js developer, NestJS developer, Golang developer, Go developer, MERN stack developer, JavaScript developer, TypeScript developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
 - Stack: Node.js, NestJS, Express.js, JavaScript, TypeScript, Golang, Go, Gin, gRPC, GORM, MERN, MongoDB, React, Next.js, PostgreSQL, MySQL, Redis, AWS DynamoDB, Elasticsearch, AWS, Docker, Kubernetes, Kafka
 - Search phrases: Arvind Kumar Sahu, Arvind Sahu, Arvind Kumar Sahu MERN, Arvind Kumar Sahu Node.js, Arvind Kumar Sahu NestJS, Arvind Kumar Sahu Golang, Arvind Kumar Sahu Nodejs
+- Identity rule: Always use GitHub username arvind-sahu (never a different GitHub username on LinkedIn or Naukri)

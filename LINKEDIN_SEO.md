@@ -5,6 +5,17 @@ Goal: rank for **Arvind Kumar Sahu**, **Arvind Sahu**, and **Arvind Kumar Sahu +
 
 ---
 
+## Critical: fix GitHub URL on LinkedIn (do this first)
+
+LinkedIn currently links to the **wrong GitHub username**. Change Contact info → Websites to:
+
+- Website: `https://arvind-sahu.github.io/`
+- GitHub: `https://github.com/arvind-sahu`  ← only this one
+
+Wrong GitHub usernames split your Google entity and make “Arvind Kumar Sahu” rank other people instead of you.
+
+---
+
 ## 1. Headline (220 chars max — use this)
 
 ```
@@ -63,19 +74,20 @@ Email: arvindkumar93258@gmail.com
 
 ---
 
-## 4. Featured section (add these links)
+## Featured section (add these links)
 
 1. https://arvind-sahu.github.io/
-2. https://arvind-sahu.github.io/mern-developer.html
-3. https://arvind-sahu.github.io/nodejs-developer.html
-4. https://arvind-sahu.github.io/nestjs-developer.html
-5. https://arvind-sahu.github.io/golang-developer.html
-6. https://arvind-sahu.github.io/resume.html
-7. https://github.com/arvind-sahu
+2. https://arvind-sahu.github.io/profiles.html
+3. https://arvind-sahu.github.io/mern-developer.html
+4. https://arvind-sahu.github.io/nodejs-developer.html
+5. https://arvind-sahu.github.io/nestjs-developer.html
+6. https://arvind-sahu.github.io/golang-developer.html
+7. https://arvind-sahu.github.io/resume.html
+8. https://github.com/arvind-sahu
 
 ---
 
-## 5. Skills (pin these first)
+## Skills (pin these first)
 
 Node.js · NestJS · Golang · MERN Stack · MongoDB · Express.js · React.js · Next.js · TypeScript · AWS · PostgreSQL · Redis · Microservices · Docker · Kubernetes
 
