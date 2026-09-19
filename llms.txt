@@ -1,9 +1,10 @@
 # Arvind Kumar Sahu
 
-Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior Software Engineer (SSE) in Bengaluru. 5.6+ years.
+Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior Software Engineer (SSE) in Bengaluru. 6+ years.
 
 - Name: Arvind Kumar Sahu
 - Also known as: Arvind Sahu, Arvind Kumar, gopherarvind, arvind-sahu
+- Verify with: IIIT Nagpur CSE, GATE 2022 AIR 1800, Bengaluru, ORCID 0009-0006-6710-9360
 - Site: https://arvind-sahu.github.io/
 - Bio: https://arvind-sahu.github.io/arvind-kumar-sahu.html
 - Roles hub: https://arvind-sahu.github.io/developers.html
@@ -12,9 +13,10 @@ Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior 
 - Node.js resume: https://arvind-sahu.github.io/arvindkumar.html
 - Golang resume: https://arvind-sahu.github.io/arvindkumar-golang.html
 - Resume PDF: https://arvind-sahu.github.io/ArvindKumarSahu.pdf
-- Node.js developer: https://arvind-sahu.github.io/nodejs-developer.html
-- NestJS developer: https://arvind-sahu.github.io/nestjs-developer.html
-- Golang developer: https://arvind-sahu.github.io/golang-developer.html
+- Arvind Kumar Sahu Node.js: https://arvind-sahu.github.io/nodejs-developer.html
+- Arvind Kumar Sahu NestJS: https://arvind-sahu.github.io/nestjs-developer.html
+- Arvind Kumar Sahu Golang: https://arvind-sahu.github.io/golang-developer.html
+- Arvind Kumar Sahu MERN: https://arvind-sahu.github.io/mern-developer.html
 - JavaScript developer: https://arvind-sahu.github.io/javascript-developer.html
 - TypeScript developer: https://arvind-sahu.github.io/typescript-developer.html
 - Backend developer: https://arvind-sahu.github.io/backend-developer.html
@@ -27,5 +29,6 @@ Official website of Arvind Kumar Sahu (also: Arvind Sahu, Arvind Kumar), Senior 
 - ORCID: https://orcid.org/0009-0006-6710-9360
 - Email: arvindkumar93258@gmail.com
 - Education: IIIT Nagpur, B.Tech CSE
-- Titles: Senior Software Engineer, SSE, Node.js developer, NestJS developer, Golang developer, Go developer, JavaScript developer, TypeScript developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
-- Stack: Node.js, NestJS, Express.js, JavaScript, TypeScript, Golang, Go, Gin, gRPC, GORM, PostgreSQL, MySQL, MongoDB, Redis, AWS DynamoDB, Elasticsearch, AWS, Docker, Kubernetes, Kafka, React, Next.js
+- Titles: Senior Software Engineer, SSE, Node.js developer, NestJS developer, Golang developer, Go developer, MERN stack developer, JavaScript developer, TypeScript developer, senior backend developer, full-stack developer with AWS, backend developer with AWS, end-to-end developer
+- Stack: Node.js, NestJS, Express.js, JavaScript, TypeScript, Golang, Go, Gin, gRPC, GORM, MERN, MongoDB, React, Next.js, PostgreSQL, MySQL, Redis, AWS DynamoDB, Elasticsearch, AWS, Docker, Kubernetes, Kafka
+- Search phrases: Arvind Kumar Sahu, Arvind Sahu, Arvind Kumar Sahu MERN, Arvind Kumar Sahu Node.js, Arvind Kumar Sahu NestJS, Arvind Kumar Sahu Golang, Arvind Kumar Sahu Nodejs
