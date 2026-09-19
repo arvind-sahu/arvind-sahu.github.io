@@ -1,11 +1,17 @@
 User-agent: *
 Allow: /
+Allow: /BingSiteAuth.xml
+Allow: /sitemap.xml
+Allow: /robots.txt
 Disallow: /404.html
 
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
 Allow: /
 
 Sitemap: https://arvind-sahu.github.io/sitemap.xml

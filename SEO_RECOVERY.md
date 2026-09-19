@@ -48,11 +48,29 @@ Also paste the headline + About from [LINKEDIN_SEO.md](./LINKEDIN_SEO.md).
 
 ## 2) Bing Webmaster Tools (required)
 
-1. Open https://www.bing.com/webmasters  
-2. Import from Google Search Console **or** verify `https://arvind-sahu.github.io/`  
-3. Submit sitemap: `https://arvind-sahu.github.io/sitemap.xml`  
-4. Use **URL Submission** / IndexNow for the same priority URLs as above  
-5. DuckDuckGo and Yahoo largely use Bing’s index — fixing Bing helps them too
+**Do not use CNAME verification for `arvind-sahu.github.io`.**  
+GitHub owns that DNS — Bing will never see `cab55a217d9e4e0b93ef052e7800367d` → `verify.bing.com`.
+
+Use one of these instead:
+
+### Option A — XML file (recommended)
+1. Confirm https://arvind-sahu.github.io/BingSiteAuth.xml opens in the browser  
+2. In Bing Webmaster → choose **XML file** verification → Verify  
+
+### Option B — Meta tag
+Homepage already includes:
+`<meta name="msvalidate.01" content="B4CF157E8E9CF6B06897E509C9F693A9" />`  
+Choose **Meta tag** verification in Bing → Verify.
+
+Then:
+1. Submit sitemap: `https://arvind-sahu.github.io/sitemap.xml`  
+2. Use **URL Submission** / IndexNow for `/`, `/profiles.html`, role pages  
+3. DuckDuckGo and Yahoo largely use Bing’s index
+
+### Yandex
+1. Confirm https://arvind-sahu.github.io/yandex_9b819dc4b1c5c257.html  
+2. Verify in Yandex Webmaster  
+3. Submit the same sitemap
 
 ---
 
